@@ -1,0 +1,121 @@
+/* 메인 타이틀 제목 */
+main > section > header{
+    margin:0 auto;
+    width: 100%;
+    height: 137px;
+    text-align: center;
+}
+main h3.m-title{
+    padding-top: 24px;
+    padding-bottom: 4px;
+    font-size: 2.4em;
+    font-family: "NotoSerifKR", sans-serif;
+    font-weight: bolder;
+    color: #D42D2D;
+}
+main p.m-subtitle::before{
+    content: '';
+    position: absolute;
+    top:0 ; left: 910px;
+    width: 80px;
+    outline: 1px solid #D42D2D;
+}
+main p.m-subtitle{
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    font-size: 1.125rem;
+    color: #D42D2D;
+}
+/* 리스트 브랜드, 제목 */
+.i_brand{
+    margin-bottom: 4px;
+    font-size: 0.8rem;
+    color: #4a4a4a;
+}
+.i_title{
+    margin-bottom: 4px;
+    font-size: 1em;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.i_title a{
+    display: block;
+}
+.i_title a:hover{
+    /* font-weight: 400; */
+    text-decoration: underline;
+}
+/* 리스트 버튼, 리뷰 */
+main figcaption{
+    position: relative;
+    margin: 8px;
+}
+.discount-price{
+    font-size: 1.25em;
+    font-weight: 600;
+}
+.cost-price{
+    font-size: 0.8em;
+    color: #4a4a4a;
+    text-decoration: line-through;
+}
+.discount{
+    font-size: 1.5em;
+    font-weight: 1000;
+    color: #D42D2D;
+}
+.i_btns{
+    margin-top: 8px;
+    position: absolute;
+    left: 0px;
+    font-size: 0.8em;
+}
+.i_review{
+    margin-top: 8px;
+    position: absolute;
+    right: 0px;
+    font-size: 0.8em;
+}
+.best-btn{
+    padding: 2px 8px;
+    background-color: #D42D2D;
+    border: 1px solid #D42D2D;
+    border-radius: 30px;
+    color: white;
+}
+.new-btn{
+    padding: 2px 8px;
+    background-color: white;
+    outline: 1px solid #121212;
+    border-radius: 30px;
+    color: #121212;
+}
+.dandok-btn{
+    padding: 2px 8px;
+    background-color: white;
+    outline: 1px solid #D42D2D;
+    border-radius: 30px;
+    color: #D42D2D;
+}
+
+.i_review{
+
+}
+
+/*  */
+.view-btn{
+    margin-top: -24px;
+    float: right;
+    font-family: "NotoSerifKR", sans-serif;
+    color: #D42D2D;
+    cursor: pointer;
+}
+.view-btn:hover{
+    font-weight: 600;
+}

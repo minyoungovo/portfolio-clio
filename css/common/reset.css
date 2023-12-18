@@ -1,0 +1,6 @@
+@import url(./../font/notoSansKR.css);
+@import url(./../font/notoSerifKR.css);
+*{margin:0; padding:0;}
+ul, li, ol{list-style: none;}
+a{text-decoration: none; color: #121212;}
+body{font-family: "Noto Sans Kr", sans-serif; font-size: 16px; color:#121212; }
