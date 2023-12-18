@@ -109,13 +109,34 @@ main figcaption{
 }
 
 /*  */
-.view-btn{
+.more-btn{
+    /* position: absolute; */
     margin-top: -24px;
     float: right;
     font-family: "NotoSerifKR", sans-serif;
+    cursor: pointer;
+    color: #D42D2D;
+    /* right: 0; */
+}
+.view-btn:hover, .more-btn:hover{
+    font-weight: 600;
+}
+.view-btn{
+    /* float: right; */
+    /* margin-top: -24px; */
+    width: 120px;
+    margin: 0 auto ;
+    padding: 8px 20px;
+    background-color: #fff;
+    border:1px solid #D42D2D;
+    border-radius: 100px;
+    font-family: "NotoSerifKR", sans-serif;
     color: #D42D2D;
     cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
 }
 .view-btn:hover{
-    font-weight: 600;
+    background-color: #D42D2D;
+    color: #fff;
 }

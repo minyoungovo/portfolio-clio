@@ -9,7 +9,7 @@
 #family-site{
     width: 100%;
     height: 300px;
-    background-color: #ff8a8a;
+    /* background-color: #ff8a8a; */
 }
 #family-site ul{
     max-width: 1500px;
@@ -36,7 +36,7 @@
 }
 #family-site figure > a img{
     width: 60%;
-    margin-top: 56px;
+    margin-top: 60px;
 }
 #family-site figcaption{
     margin-top: 8px;
@@ -258,7 +258,7 @@
     width: 200%;
 }
 #ranking-img li{
-    float: right;
+    float: left;
     width: calc(100%/5 - 16px);
     margin-right: 16px;
 }
@@ -326,7 +326,7 @@
 }
 #howAbout{
     width: 100%;
-    height: 88vh;
+    height: 75vh;
     background-color: #f2f2f2;
     overflow: hidden;
 }
@@ -337,7 +337,7 @@
 }
 #howAbout li{
     float: left;
-    width: calc(100%/6)-16px;
+    width: calc(100%/6 - 16px);
     margin-right: 16px;
 }
 #howAbout li:last-child{
@@ -351,14 +351,13 @@
 /*  */
 #event{
     width: 100%;
-    height: 100vh;
-    background-color: #aaa;
+    height: 67vh;
 }
 #event-container{
+    position: relative;
     max-width: 1500px;
     margin: 0 auto;
     height: 80vh;
-    /* background-color: blue; */
 }
 #event-container ul {
     width: 100%;
@@ -367,9 +366,7 @@
 #event-container li{
     margin-right: 8px;
     float: left;
-    /* background-color: #fff; */
     width: 49.7%;
-
 }
 #event-container li:last-child{
     margin-right: 0px ;
@@ -378,4 +375,182 @@
     width: 100%;
     border-radius: 10px;
     border: 1px solid #eee;
+}
+#event-container .more-btn{
+    position: absolute;
+    top: -24px;
+    right: 0;
+    margin-top: 0px;
+    /* width: 100%; */
+}
+#event-container .event-title{
+    width: 100%;
+    font-size: 1.125em;
+    text-align: center;
+    margin-bottom: 16px;
+}
+/*  */
+#bestReview{
+    width: 100%;
+    height: 102vh;
+    /* background-color: #aaa; */
+}
+#bestReview-items{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+#bestReview-items ul{
+    width: 100%;
+}
+#bestReview-items li{
+    float: left;
+    width: calc(100%/4 - 16px);
+    margin-right: 16px;
+}
+#bestReview-items li:last-child{
+    margin-right: 0px;
+}
+#bestReview-items li img{
+    width: 100%;
+    border-radius: 10px;
+    border:1px solid #eee;
+}
+#bestReview-items .userId{
+    font-size: 0.8em;
+}
+#bestReview-items .info{
+    margin: 16px 0;
+    font-size: 0.9em;
+    word-break:keep-all;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+}
+#bestReview-items .bestReview-review{
+    position: static;
+}
+#bestReview-items .bestReview-brand{
+    padding-top: 16px;
+    border-top: 1px solid #eee;
+
+}
+#instagram{
+    width: 100%;
+    height: 86vh;
+    /* background-color: #eee; */
+    overflow: hidden;
+}
+#instagram-items ul{
+    /* max-width: 1500px; */
+    /* margin: 0 auto; */
+    width: 120%;
+    margin-left: 12%;
+}
+#instagram-items li{
+    float: left;
+    width: calc(100%/8 - 16px);
+    margin-right: 16px;
+}
+#instagram-items li:last-child{
+    margin-right: 0px;
+}
+#instagram-items li img{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+#instagram-items .instagram-title{
+    text-align: center;
+    font-weight: 600;
+}
+#instagram-items .instagram-info{
+    margin: 16px 0;
+    font-size: 0.9em;
+    word-break:keep-all;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    cursor: pointer;
+    text-align: center;
+}
+/*  */
+#footer{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    /* background-color: #eee; */
+}
+#fl{
+    padding: 48px;
+    margin-left: 4px;
+    float: left;
+    background-color: #3a3a3a;
+    width: 59.4%;
+    height: 300px;
+    border-radius: 10px;
+    color: #fff;
+    box-sizing: border-box;
+}
+#fl-top{
+    width: 100%;
+}
+#fl-top .footer-menu{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4px;
+}
+#fl-top .footer-menu li{
+    float: left;
+
+}
+#fl-top .footer-menu a{
+    color: #fff;
+}
+#fl-bottom{
+    margin-top: 24px;
+    padding-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #474747;
+}
+#fl-bottom ul{
+    margin-left: 12%;
+    text-align: center;
+    line-height: 35px;
+}
+#fl-bottom a{
+    color: #fff;
+    font-size: 1em;
+    
+}
+#fl-bottom .info{
+    font-size: 0.9em;
+}
+
+#fr{
+    padding: 48px;
+    margin-right: 4px;
+    float: right;
+    width: 40%;
+    height: 300px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ededed;
+}
+#fl-left{
+
 }
