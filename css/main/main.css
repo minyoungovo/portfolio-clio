@@ -2,9 +2,17 @@
     width:100%;
 }
 #visual{
+    position: relative;
     width: 100%;
-    height: 100vh;
-    background: url(./../../images/main/visual/visual.png) no-repeat 50% 0;
+    height: 110vh;
+    background: url(./../../images/main/visual/visual.png) no-repeat 30% 0;
+}
+#visual .info{
+    position: absolute;
+    /* left: 580px; */
+    /* bottom: 200px; */
+    bottom: 20%;
+    left: 30%;
 }
 #family-site{
     width: 100%;
@@ -71,11 +79,20 @@
 #recommend li:last-child{
     margin-right: 8px;
 }
+#recommend figure > a{
+    display: block;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
 #recommend li img{
     width: 100%;
     border-radius: 10px;
     border:1px solid #eee;
 }
+  #recommend li img:hover{
+    /* transition: all 0.3s linear;
+    transform: scale(1.1);  */
+  }
 
 #recommend-slidebar{
     margin: 24px auto;
@@ -148,14 +165,13 @@
 /*  */
 #todayS{
     width: 100%;
-    height: 86vh;
+    height: 90vh;
     background-color: rgb(255, 249, 233);
 }
 #todayS-item{
     max-width: 1500px;
     /* height: 600px; */
     margin: 0 auto;
-    /* background-color: red; */
 }
 #todayS-item ul{
     width: 100% ;
@@ -278,6 +294,9 @@
     width: 50%;
     height: 50vh;
 }
+#mdPick-movie iframe{
+    border-radius: 10px;
+}
 #mdPick-items{
     float: right;
     margin-right: 12%;
@@ -326,7 +345,7 @@
 }
 #howAbout{
     width: 100%;
-    height: 75vh;
+    height: 77vh;
     background-color: #f2f2f2;
     overflow: hidden;
 }
@@ -351,7 +370,7 @@
 /*  */
 #event{
     width: 100%;
-    height: 67vh;
+    height: 70vh;
 }
 #event-container{
     position: relative;
@@ -391,8 +410,9 @@
 }
 /*  */
 #bestReview{
+    position: relative;
     width: 100%;
-    height: 102vh;
+    height: 105vh;
     /* background-color: #aaa; */
 }
 #bestReview-items{
@@ -423,6 +443,7 @@
     font-size: 0.9em;
     word-break:keep-all;
     width: 100%;
+    height: 210px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -436,17 +457,21 @@
 #bestReview-items .bestReview-brand{
     padding-top: 16px;
     border-top: 1px solid #eee;
-
+}
+#bestReview-bg{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    background-color: #fff8f0;
+    width: 100%;
+    height: 480px;
 }
 #instagram{
     width: 100%;
-    height: 86vh;
-    /* background-color: #eee; */
+    height: 72vh;
     overflow: hidden;
 }
 #instagram-items ul{
-    /* max-width: 1500px; */
-    /* margin: 0 auto; */
     width: 120%;
     margin-left: 12%;
 }
@@ -458,10 +483,20 @@
 #instagram-items li:last-child{
     margin-right: 0px;
 }
+#instagram-items figure > a{
+    display: block;
+    height: 320px;
+    overflow: hidden;
+}
 #instagram-items li img{
-    width: 100%;
+    /* width: 150%; */
+    /* width: 150%;
     border-radius: 10px;
-    border: 1px solid #eee;
+    object-fit: cover;
+    border: 1px solid #eee; */
+    width: 120%;
+    height: 400px;
+    object-fit: cover;
 }
 #instagram-items .instagram-title{
     text-align: center;

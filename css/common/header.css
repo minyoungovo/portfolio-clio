@@ -1,8 +1,12 @@
 #header{
     width: 100%;
     position: fixed;
-    /* top:0; left:0; */
+    z-index: 1;
     /* background-color: #eee; */
+    -webkit-transition-duration:0.5s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.5s;
+    transition-timing-function:ease;
 }
 #header-container{
     max-width: 1500px;
@@ -40,3 +44,11 @@
 #nav a{
     font-size: 2em;
 }
+.header-scroll {
+    border-bottom:1px solid #eee;
+    background-color:rgba(256,256,256,.6);
+    -webkit-transition-duration:0.5s;
+    -webkit-transition-timing-function:ease;
+    transition-duration:0.5s;
+    transition-timing-function:ease;
+  }
