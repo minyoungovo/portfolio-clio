@@ -130,8 +130,6 @@ main figcaption{
     font-weight: 600;
 }
 .view-btn{
-    /* float: right; */
-    /* margin-top: -24px; */
     width: 120px;
     margin: 0 auto ;
     padding: 8px 20px;
@@ -143,8 +141,10 @@ main figcaption{
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
+    transition: 0.3s;
 }
 .view-btn:hover{
     background-color: #D42D2D;
+    box-shadow: inset 8em 0 0 0 #D42D2D;
     color: #fff;
 }

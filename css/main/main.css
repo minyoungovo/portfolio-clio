@@ -302,9 +302,6 @@
     margin-right: 12%;
     width: 25%;
 }
-#mdPick-items .subtitle{
-
-}
 #mdPick-items h4{
     margin-top: 8px;
     font-size: 1.5em;
@@ -585,7 +582,4 @@
     display: flex;
     justify-content: space-around;
     border: 1px solid #ededed;
-}
-#fl-left{
-
 }
