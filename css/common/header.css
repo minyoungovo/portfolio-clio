@@ -55,9 +55,24 @@
   #full-menu{
     display: none;
     position: absolute;
-    top: 0; left: 0;
-    width: 100%;
+    top: 0; right: 0;
+    width: 20%;
     height: 100vh;
     background-color: rgba(256, 256, 256, .8);
     /* background-color: rgba(0, 0, 0, .8); */
+}
+#full-menu ul{
+    margin-top: 64px;
+    /* border: 1px solid red; */
+}
+#full-menu li{
+    line-height: 48px;
+    font-size: 1.125em;
+    text-align: center;
+}
+
+@media screen and (max-width:1500px){
+    #header-container{
+        width: 95%;
+    }
 }

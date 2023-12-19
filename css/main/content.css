@@ -148,3 +148,16 @@ main figcaption{
     box-shadow: inset 8em 0 0 0 #D42D2D;
     color: #fff;
 }
+
+
+@media screen and (max-width:1000px) {
+    /* .i_btns, .i_review{
+        position: static;
+    } */
+
+    .discount{
+        font-size: 1.125em;
+    }
+}
+
+
