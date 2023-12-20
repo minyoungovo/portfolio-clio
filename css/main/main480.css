@@ -17,7 +17,7 @@
     #family-site li{
         width: calc(100% / 9 - 8px);
         min-width: 80px;
-        max-width: 100px;
+        max-width: 80px;
         margin-right: 8px;
     }
     #family-site figcaption{
