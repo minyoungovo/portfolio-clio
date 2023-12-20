@@ -209,7 +209,6 @@
     float: left;
     width: 45%;
     overflow: hidden;
-    /* padding: 4px; */
     box-sizing: border-box;
 }
 #ranking-chart .tabmenu{
@@ -225,23 +224,20 @@
 
 }
 #ranking-chart .tabmenu li.active{
-    /* background-color: #D42D2D; */
     border-bottom: 2px solid #D42D2D;
     font-weight: 500;
-    /* color: #eee; */
 }
 #ranking-chart .tabmenu li:hover{
     font-weight: 500;
 }
 #ranking-chart .chart{
-    padding-top: 24px;
+    padding-top: 2%;
     float: left;
     display: block;
     width: 100%;
 }
 #ranking-chart .chart li{
-    /* border: 1px solid red; */
-    height: 80px;
+    height: 60px;
     box-sizing: border-box;
     border-bottom: 1px solid #D42D2D;
 }
@@ -252,8 +248,8 @@
 #ranking-chart .chart .rank{
     float: left;
     width: 10%;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     /* background-color: #eee; */
     font-size: 2em;
     font-family: "NotoSerifKR", sans-serif;
@@ -265,8 +261,8 @@
     float: right;
     padding-left: 16px;
     width: 88%;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     
     word-break:keep-all;
     text-overflow: ellipsis;

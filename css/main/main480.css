@@ -13,14 +13,13 @@
     }
     #family-site{
         height: 20vh;
-        max-height: 150px;
     }
     #family-site ul{
         width: 1000%;
     }
     #family-site li{
         width: calc(100% / 9 - 8px);
-        min-width: 80px;
+        min-width: 100px;
         max-width: 80px;
         margin-right: 8px;
     }
@@ -42,13 +41,14 @@
         width: 95%;
     }
     #recommend li{
-        width: calc(100%/2 - 16px);
-        margin-right: 8px;
+        width: calc(100%/2 - 8px);
+        margin-right: 0px;
         height: 60vh;
-        max-height: 400px;
+        max-height: 520px;
     }
     #recommend li:nth-child(n){
-        margin-left: 8px;
+        margin-left: 0px;
+        margin-right: 16px;
     }
     #recommend li:nth-child(2n){
         margin-right: 0px;
@@ -66,7 +66,7 @@
     }
     #bestNew-items{
         margin: 0 auto;
-        margin-top: 2vh;
+        margin-top: 4vh;
         width: 95%;
         float: none;
     }
@@ -79,7 +79,6 @@
         margin-right: 16px;
         width: calc(100% / 2 - 8px);
         height: 60vh;
-        max-height: 400px;
     }
     #bestNew-items li:nth-child(2n){
         margin-right: 0px;
@@ -126,7 +125,6 @@
     #todayS-item{
         width: 95%;
         height: 43vh;
-        min-height: 730px;
     }
     #todayS-item li{
         width: calc(100%/2 - 8px);
@@ -144,7 +142,6 @@
     }
     #ranking-chart{
         height: 45vh;
-        min-height: 400px;
     }
     #ranking-chart .chart li{
         height: 60px;
@@ -156,10 +153,10 @@
     #ranking-chart .chart .info{
         height: 60px;
         line-height: 60px;
+        font-size: 1em;
     }
     #ranking-img{
         height: 48vh;
-        min-height: 350px;
     }
     #ranking-img ul{
         height: auto ;
@@ -296,9 +293,37 @@
 
 
 }
+@media screen and (max-width:580px) {
 
+}
 @media screen and (max-width:480px) {
     main h3.m-title{
         font-size: 1.5em;
     }
+    #family-site{
+        max-height: 150px;
+    }
+    #family-site li{
+        min-width: 80px;
+        max-width: 80px;
+    }
+    #recommend-items{
+        max-height: 800px;
+    }
+    #recommend li{
+        max-height: 400px;
+    }
+    #bestNew-items li{
+        max-height: 400px;
+    }
+    #todayS-item{
+        min-height: 730px;
+    }
+    #ranking-chart{
+        min-height: 400px;
+    }
+    #ranking-img{
+        min-height: 350px;
+    }
+
 }
