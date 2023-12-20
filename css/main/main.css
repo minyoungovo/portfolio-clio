@@ -6,6 +6,7 @@
     width: 100%;
     height: 100vh;
     background: url(./../../images/main/visual/visual.png) no-repeat 30% 0;
+    background-size: cover;
 }
 #visual .info{
     position: absolute;
@@ -275,6 +276,7 @@
     cursor: pointer;
     font-size: 1.125em;
     box-sizing: border-box;
+    text-align: left;
 }
 #ranking-img{
     width: 40%;
@@ -511,7 +513,7 @@
 }
 #instagram-items .instagram-title{
     text-align: center;
-    font-weight: 600;
+    font-weight: 800;
 }
 #instagram-items .instagram-info{
     margin: 16px 0;

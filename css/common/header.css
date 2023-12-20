@@ -38,8 +38,11 @@
 }
 #nav li{
     padding-top: 16px;
-    margin-left: 24px;
+    margin-right: 24px;
     float: left;
+}
+#nav li:last-child{
+    margin-right: 0px;
 }
 #nav a{
     font-size: 2em;
@@ -74,5 +77,37 @@
 @media screen and (max-width:1500px){
     #header-container{
         width: 95%;
+    }
+}
+
+@media screen and (max-width:730px){
+    #header{
+        background-color: #fff;
+        /* height: 150px; */
+        height: 80px;
+        box-sizing: border-box;
+    }
+    #header-container{
+        width: 90%;
+    }
+    #h_top{
+        display: none;
+    }
+    #h_bottom{
+        line-height: 80px;
+        text-align: center;
+    }
+    #h_bottom .logo{
+        margin-top: 4px;
+    }
+    #h_bottom .logo img{
+        width: 160px;
+    }
+    #nav li{
+        padding-top: 0px;
+        margin-right: 12px;
+    }
+    #nav a{
+        font-size: 1.5em;
     }
 }

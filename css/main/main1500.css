@@ -116,13 +116,11 @@
         width: 46%;
     }
     #ranking-chart .tabmenu li{
-        padding: 8px 24px;
+        padding: 16px 24px;
     }
     #ranking-img{
         margin-top: 4%;
         width: 48%;
-    }
-    #ranking-img ul{
     }
     #ranking-img li{
         width: calc(100%/5 - 8px);
