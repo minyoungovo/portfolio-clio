@@ -21,7 +21,8 @@
     overflow: hidden;
 }
 #family-site ul{
-    padding-top: 32px;
+    /* padding-top: 32px; */
+    padding: 2%;
     margin:0 auto;
     max-width: 1500px;
     height: 100%;
