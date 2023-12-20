@@ -68,7 +68,7 @@
     #mdPick-movie{
         float: none;
         margin-left: 0%;
-        width: 95%;
+        width: 90%;
         margin:0 auto;
     }
     #mdPick-items{
@@ -100,7 +100,7 @@
         height: auto;
     }
     #event-container{
-        width: 95%;
+        width: 100%;
         height: 37vh;
     }
     #bestReview{

@@ -1,4 +1,7 @@
 @media screen and (max-width:730px) {
+    main > section > header{
+        height: auto;
+    }
     #visual{
         background: url(./../../images/main/visual/visual_mb480.png) no-repeat 50% 0;
         background-size: cover;
@@ -31,10 +34,11 @@
     #recommend-items{
         width: 100%;
         height: 116vh;
+        max-height: 800px;
     }
     #recommend-items ul{
         height: auto;
-        width: 95%;
+        width: 90%;
     }
     #recommend li{
         width: calc(100%/2 - 16px);
@@ -118,8 +122,23 @@
         box-sizing: border-box;
     }
     #todayS-item{
+        width: 90%;
         height: 43vh;
-        min-height: 320px;
+        min-height: 730px;
+    }
+    #todayS-item li{
+        width: calc(100%/2 - 8px);
+    }
+    #todayS-item li:nth-child(n) {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #todayS-item li:nth-child(2n){
+        margin-left: 16px;
+        margin-right: 0px;
+    }
+    #todayS-item li:last-child{
+        margin-top: 2%;
     }
     #ranking-chart{
         height: 45vh;
@@ -172,12 +191,12 @@
         height: auto;
     }
     #event-container{
-        width: 95%;
+        width: 100%;
         height: auto;
     }
     #event-container li{
         float: none;
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
         padding-bottom: 2%;
     }
@@ -189,7 +208,7 @@
         width: 100%;
     }
     #bestReview-items ul{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
     #bestReview-items li{

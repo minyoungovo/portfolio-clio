@@ -118,13 +118,14 @@ main figcaption{
 
 /*  */
 .more-btn{
-    /* position: absolute; */
+    position: absolute;
     margin-top: -24px;
+    margin-right: 4%;
     float: right;
     font-family: "NotoSerifKR", sans-serif;
     cursor: pointer;
     color: #D42D2D;
-    /* right: 0; */
+    right: 0;
 }
 .view-btn:hover, .more-btn:hover{
     font-weight: 600;
