@@ -3,7 +3,7 @@
         height: auto;
     }
     #visual{
-        background: url(./../../images/main/visual/visual_mb480.png) no-repeat 50% 0;
+        background: url(./../../images/main/visual/visual_mb480.png) no-repeat 35% 0;
         background-size: cover;
     }
     #visual .info{
@@ -13,6 +13,7 @@
     }
     #family-site{
         height: 20vh;
+        max-height: 150px;
     }
     #family-site ul{
         width: 1000%;
@@ -38,7 +39,7 @@
     }
     #recommend-items ul{
         height: auto;
-        width: 90%;
+        width: 95%;
     }
     #recommend li{
         width: calc(100%/2 - 16px);
@@ -58,14 +59,15 @@
     }
     #bestNew-BigImg{
         background-size: cover;
-        width: 100%;
+        width: 95%;
         height: 110vh; 
         float: none;
+        margin: 0 auto ;
     }
     #bestNew-items{
         margin: 0 auto;
         margin-top: 2vh;
-        width: 90%;
+        width: 95%;
         float: none;
     }
     #bestNew-items ul{
@@ -122,7 +124,7 @@
         box-sizing: border-box;
     }
     #todayS-item{
-        width: 90%;
+        width: 95%;
         height: 43vh;
         min-height: 730px;
     }
@@ -196,7 +198,7 @@
     }
     #event-container li{
         float: none;
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
         padding-bottom: 2%;
     }
@@ -208,7 +210,7 @@
         width: 100%;
     }
     #bestReview-items ul{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     #bestReview-items li{
