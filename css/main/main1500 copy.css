@@ -1,0 +1,194 @@
+/* 
+@media screen and (max-width:1500px) {
+    #visual{
+        /* position: relative; */
+        /* width: 100%; */
+        /* background: url(./../../images/main/visual/visual.png) no-repeat 30% 0; */
+    }
+    #family-site{
+        /* height: 30vh; */
+    }
+    #family-site ul{
+        width: 95%;
+        margin:0 auto;
+    }
+    #family-site li{
+        width: calc(100% / 9 - 8px);
+        margin-right: 8px;
+    }
+    #family-site figcaption{
+        margin-top: 8px;
+    }
+    /* --------------------------- */
+    #recommend{
+        /* height: 52vw; */
+    }
+    #recommend-items{
+        width: 95%;
+        /* height: 39vw; */
+    }
+    #recommend li{
+        width: calc(100%/4 - 8px);
+        margin-right: 8px;
+    }
+    #recommend li:first-child{
+        margin-left: 4px;
+    }
+    #recommend li:last-child{
+        margin-right: 4px;
+    }
+    #recommend-slidebar{
+        width: 95%;
+    }
+    /* --------------------------- */
+    #bestNew{
+        overflow: hidden;
+    }
+    #bestNew-items ul{
+        margin-left: 16px;
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+        background-color: #ddd;
+    }
+    #bestNew-items li{
+        float: left;
+        margin-right: 16px;
+        width: calc(100% / 2 - 8px);
+    }
+    #bestNew-items li:nth-child(2n){
+        margin-right: 0px;
+    }
+    /*  */
+    #main-banner{
+        width: 100%;
+        min-height: 200px;
+        margin: 16px 0;
+    }
+    #main-banner ul{
+        /* height: 100%; */
+    }
+    #main-banner .banner-img1{
+        background: url(./../../images/main/banner/6baa97f53cd161f4c9f0e7d96f058d3e.jpg) no-repeat 50% 0 ;
+    }
+    #main-banner .banner-img2{
+        display: none;
+        background: url(./../../images/main/banner/92ea5ab4384291e8043f9e6b09ba33f3.jpg) no-repeat 50% 0;
+    }
+    #main-banner .banner-img3{
+        display: none;
+        background: url(./../../images/main/banner/9300aac1ad5242150564b3f71dfaabdb.jpg) no-repeat 50% 0;
+    }
+    #main-banner .banner-img4{
+        display: none;
+        background: url(./../../images/main/banner/a629faf15c560dc3b6efb97ce38c71e4.jpg) no-repeat 50% 0;
+    }
+    /*  */
+    #todayS{
+        background-color: rgb(255, 249, 233);
+    }
+    #todayS-item{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #todayS-item ul{
+        width: 100% ;
+    }
+    /*  */
+    #ranking{
+        width: 100%;
+    }
+    #ranking-chart{
+        margin-left: calc((100% - 95%) / 2);
+        margin-left: 2.5%;
+        width: 46%;
+    }
+    #ranking-chart .tabmenu li{
+        padding: 16px 24px;
+    }
+    #ranking-img{
+        margin-top: 4%;
+        width: 48%;
+    }
+    #ranking-img li{
+        width: calc(100%/5 - 8px);
+        margin-right: 8px;
+    }
+    /*  */
+    #mdPick-movie{
+        margin-left: 2.5%;
+        width: 60%;
+    }
+    #mdPick-movie iframe{
+        border-radius: 10px;
+    }
+    #mdPick-items{
+        margin: 0 1%;
+        width: 35%;
+    }
+    #mdPick-items li{
+        padding: 8px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #D42D2D;
+    }
+    #mdPick-items li:last-child{
+        border:none;
+    }
+    #mdPick-items img{
+        width: 25%;
+        float: left;
+        margin-top: 24px;
+        border-radius: 10px;
+        border:1px solid #eee;
+    }
+    #mdPick-items figcaption{
+        float: right;
+        width: 70%;
+        margin-top: 16px;
+    }
+    #howAbout ul{
+        margin-left: 32%;
+    }
+    #howAbout li{
+        width: calc(100%/6 - 8px);
+        margin-right: 8px;
+    }
+    #event-container{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #event-container li{
+        float: left;
+        width: calc(100% / 2 - 16px);
+    }
+    #event-container li:first-child{
+        margin-left: 8px;
+    }
+    #bestReview-items{
+        width: 95%;
+    }
+    #bestReview-items ul{
+        width: 100%;
+    }
+    #bestReview-items li{
+        width: calc(100%/4 - 8px);
+        margin-right: 8px;
+    }
+    #bestReview-bg{
+        height: 38vh;
+    }
+    /*  */
+    #footer{
+        font-size: 0.9em;
+    }
+    #fl-top .footer-menu{
+        width: 90%;
+    }
+    #fl-bottom{
+        margin-top: 16px;
+        padding-top: 24px;
+    }
+    #fl-bottom ul{
+        margin-left: 5%;
+    }
+} */

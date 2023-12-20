@@ -2,6 +2,8 @@
     #family-site figcaption{
         display: none;
     }
+    #recommend{
+    }
     .i_btns, .i_review{
         position: static;
     }
@@ -19,7 +21,51 @@
     }
     #ranking-chart{
         width: 90%;
+    }
+    #ranking-img ul{
+        width: 420%;
     }   
+    /*  */
+    #mdPick{
+        height: auto;
+    }
+    #mdPick-movie{
+        height: 40vh;
+    }
+    #howAbout{
+        height: auto;
+    }
+    #howAbout li{
+        padding-bottom: 2vh;
+    }
+    #event{
+        height: auto;
+    }
+    #event-container{
+        width: 100%;
+        height: 37vh;
+    }
+    #bestReview{
+        height: auto;
+    }
+    #bestReview-bg{
+        height: 30vh;
+    }
+    #instagram{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    #instagram-items ul{
+        width: 250%;
+        margin-left: 2vw;
+    }
+    #instagram-items li{
+        float: left;
+        width: calc(100%/7 - 8px);
+        margin-right: 8px;
+        padding-bottom: 2vh;
+    }
      /*  */
     #footer{
         height: 250px;

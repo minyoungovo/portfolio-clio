@@ -1,4 +1,3 @@
-
 #main{
     width:100%;
 }
@@ -17,29 +16,26 @@
 }
 #family-site{
     width: 100%;
-    height: 30vh;
     overflow: hidden;
 }
 #family-site ul{
-    /* padding-top: 32px; */
-    padding: 2%;
+    padding: 2% 0;
     margin:0 auto;
     max-width: 1500px;
-    height: 100%;
-    margin:0 auto;
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 #family-site li{
-    float: left;
-    width: calc(100% / 9 - 39px);
-    margin-right: 39px;
+    width: calc(100% / 9 - 1%);
+    margin-right: 1%;
     text-align: center;
 }
 #family-site li:last-child{
     margin-right: 0px;
-}
-#family-site figure{
-    margin-top: 3vh;
 }
 #family-site figure > a{
     display: block;
@@ -55,33 +51,34 @@
 #recommend{
     width: 100%;
     /* height: 752px; */
-    height: 78vh;
+    /* height: 78vh; */
 }
  #recommend-items{
     margin:0 auto;
+    width: 95%;
     max-width: 1500px;
-    height: 58vh;
+    /* height: 58vh; */
 }
  #recommend ul{
-    width: 100%;
-    height: 58vh;
     margin: 0 auto ;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 #recommend li{
-    float: left;
-    width: calc(100%/4 - 16px);
-    margin-right: 16px;
-}
-#recommend li:first-child{
-    margin-left: 8px;
+    width: calc(100% / 4 - 8px);
+    margin-right:8px;
+    padding-bottom: 2%;
 }
 #recommend li:last-child{
-    margin-right: 8px;
+    margin-right:0px;
 }
 #recommend figure > a{
     display: block;
-    width: 100%; height: 100%;
+    width: 100%; 
+    height: 100%;
     overflow: hidden;
 }
 #recommend li img{
@@ -90,44 +87,46 @@
     border:1px solid #eee;
 }
   #recommend li img:hover{
+    /* 클릭 시 확대 되는 애니메이션 효과 */
     /* transition: all 0.3s linear;
     transform: scale(1.1);  */
   }
 
 #recommend-slidebar{
-    margin: 24px auto;
-    /* margin-top: 24px; */
+    margin: 0 auto;
+    margin-bottom: 2%;
     max-width: 1500px;
+    width: 95%;
     height: 5px ;
     background: #ffe8e8;
 }
 /* --------------------------- */
 #bestNew{
     width: 100%;
-    height: 134vh;
     overflow: hidden;
 }
+#bestNew-container{
+    display: flex;
+}
 #bestNew-BigImg{
-    float: left;
     width: 50%;
-    height: 120vh;
     background: url(./../../images/main/bestNew/bigImg.png) no-repeat 50% 0;
     background-size: cover;
 }
 #bestNew-items{
-    width: 50%;
-    /* height: 600px; */
-    float: right;
-}
-#bestNew-items ul{
-    margin-left: 16px;
-    width: 78.5%;
+    width: 40%;
+    margin: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 #bestNew-items li{
-    float: left;
-    margin-right: 16px;
-    width: calc(100%/2 - 16px);
-    height: 58vh;
+    margin-right: 8px;
+    width: calc(100%/2 - 8px);
+    padding-bottom: 2%;
+}
+#bestNew-items li:nth-child(2n){
+    margin-right: 0px;
 }
 #bestNew-items li img{
     width: 100%;
@@ -136,9 +135,9 @@
 }
 /*  */
 #main-banner{
+    margin: 2% 0;
     width: 100%;
-    height: 16vh;
-    margin-top: 16px;
+    min-width: 140px;
     overflow: hidden;
 }
 #main-banner ul{
@@ -153,46 +152,39 @@
 }
 #main-banner .banner-img1{
     background: url(./../../images/main/banner/6baa97f53cd161f4c9f0e7d96f058d3e.jpg) no-repeat 0 0 ;
-    /* background-size: contain; */
 }
 #main-banner .banner-img2{
-    /* display: none; */
     background: url(./../../images/main/banner/92ea5ab4384291e8043f9e6b09ba33f3.jpg) no-repeat 0 0 ;
 }
 #main-banner .banner-img3{
-    /* display: none; */
     background: url(./../../images/main/banner/9300aac1ad5242150564b3f71dfaabdb.jpg) no-repeat 0 0 ;
 }
 #main-banner .banner-img4{
-    /* display: none; */
     background: url(./../../images/main/banner/a629faf15c560dc3b6efb97ce38c71e4.jpg) no-repeat 0 0 ;
 }
 /*  */
 #todayS{
     width: 100%;
-    height: 90vh;
+    height: auto;
     background-color: rgb(255, 249, 233);
 }
 #todayS-item{
     max-width: 1500px;
-    /* height: 600px; */
+    width: 95%;
     margin: 0 auto;
 }
 #todayS-item ul{
     width: 100% ;
-    height: 650px;
-    /* background-color: blue; */
+    display: flex;
+    flex-wrap: wrap;
 }
 #todayS-item li{
-    float: left;
-    width: calc(100%/3 - 16px);
     margin-right: 16px;
-}
-#todayS-item li:first-child{
-    margin-left: 8px;
+    padding-bottom: 2%;
+    width: calc(100%/3 - 16px);
 }
 #todayS-item li:last-child{
-    margin-right: 8px;
+    margin-right: 0px;
 }
 #todayS-item li img{
     width: 100%;
@@ -201,27 +193,35 @@
 }
 /*  */
 #ranking{
+    position: relative;
     width: 100%;
-    height: 72vh;
+}
+#ranking-container{
+    margin: 0 auto;
+    /* max-width: 1500px; */
+    /* width: 95%; */
+    display: flex;
+    justify-content: space-between;
 }
 #ranking-chart{
-    margin-left: 12%;
-    float: left;
-    width: 45%;
+    margin-left: calc((100% - 1500px) / 2);
+    width: 40%;
+    margin-right: 16px;
     overflow: hidden;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #ranking-chart .tabmenu{
-    float: left;
     width: 1000%;
+    display: flex;
 }
 #ranking-chart .tabmenu li{
-    float: left;
     border-bottom: 2px solid #eee;
     padding: 16px 32px;
     cursor: pointer;
     font-size: 1.125em;
-
 }
 #ranking-chart .tabmenu li.active{
     border-bottom: 2px solid #D42D2D;
@@ -232,24 +232,29 @@
 }
 #ranking-chart .chart{
     padding-top: 2%;
-    float: left;
-    display: block;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-bottom: 4%;
 }
 #ranking-chart .chart li{
-    height: 60px;
+    height: calc(100% / 5); 
     box-sizing: border-box;
     border-bottom: 1px solid #D42D2D;
+    display: flex;
+    align-items: center;
 }
 #ranking-chart .chart li.active{
     background-color: #fff3f3;
     font-weight: 500;
 }
+#ranking-chart .chart .info:hover{
+    font-weight: 500;
+}
 #ranking-chart .chart .rank{
-    float: left;
     width: 10%;
-    height: 60px;
-    line-height: 60px;
     /* background-color: #eee; */
     font-size: 2em;
     font-family: "NotoSerifKR", sans-serif;
@@ -258,12 +263,7 @@
     color: #D42D2D;
 }
 #ranking-chart .chart .info{
-    float: right;
-    padding-left: 16px;
     width: 88%;
-    height: 60px;
-    line-height: 60px;
-    
     word-break:keep-all;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -276,23 +276,29 @@
     font-size: 1.125em;
     box-sizing: border-box;
     text-align: left;
+
+    line-height: 2.5em;
 }
 #ranking-img{
-    width: 40%;
-    float: right;
+    width: 60%;
     overflow: hidden;
-    margin-top: 2%;
 }
 #ranking-img ul{
     width: 200%;
+    display: flex;
 }
 #ranking-img li{
-    float: left;
-    width: calc(100%/5 - 16px);
+    padding: 2% 0;
+    width: 100%;
+    /* width: calc(100%/5 - 16px); */
     margin-right: 16px;
+    opacity: .4;
 }
 #ranking-img li:last-child{
     margin-right: 0px;
+}
+#ranking-img li.active{
+    opacity: 1;
 }
 #ranking-img img{
     width: 100%;
@@ -302,21 +308,29 @@
 /*  */
 #mdPick{
     background-color: #ffc7c7;
-    height: 70vh;
+}
+#mdPick-container{
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 95%;
+    display: flex;
+    align-items: center;
 }
 #mdPick-movie{
-    margin-left: 12%;
-    float: left;
-    width: 50%;
-    height: 50vh;
+    width: 65%;
+    height: 55vh;
+    padding-bottom: 2%;
 }
 #mdPick-movie iframe{
     border-radius: 10px;
 }
 #mdPick-items{
-    float: right;
-    margin-right: 12%;
-    width: 25%;
+    position: relative;
+    margin-left: 16px;
+    padding-bottom: 2%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
 }
 #mdPick-items h4{
     margin-top: 8px;
@@ -324,52 +338,54 @@
     padding-bottom: 8px;
     box-sizing: border-box;
 }
-#mdPick-items .view-btn{
-    margin-top: -28px;
+#mdPick-items .more-btn{
+    margin-bottom: 2%;
 }
 #mdPick-items ul{
     width: 100%;
+    height: 100%;
     border-top: 1px solid #D42D2D;
+    display: flex;
+    flex-direction: column;
 }
 #mdPick-items li{
-    height: 185px;
-    /* line-height: 185px; */
-    /* margin-top: 4px; */
-    padding: 8px;
+    height: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid #D42D2D;
+    display: flex;
 }
 #mdPick-items li:last-child{
     border:none;
 }
-#mdPick-items img{
-    /* width: 100px; */
+#mdPick-items figure{
+    display: flex;
+    align-items: center;
+}
+#mdPick-items figure > a{
     width: 25%;
-    float: left;
-    margin-top: 24px;
+    padding: 2%;
+}
+#mdPick-items img{
+    width: 100%;
+    object-fit: cover;
+    border: 1px solid #eee;
     border-radius: 10px;
-    border:1px solid #eee;
 }
 #mdPick-items figcaption{
-    float: right;
-    width: 70%;
-    margin:0px;
-    margin-top: 16px;
-    /* line-height: 10px; */
+    width: 100%;
 }
 #howAbout{
     width: 100%;
-    height: 80vh;
     background-color: #f2f2f2;
     overflow: hidden;
 }
 #howAbout ul{
-    margin-left: 36%;
-    width: 140%;
-    /* float: right; */
+    margin-left: calc((100% - 1500px)/ 2);
+    width: 160%;
+    display: flex;
+    padding-bottom: 2%;
 }
 #howAbout li{
-    float: left;
     width: calc(100%/6 - 16px);
     margin-right: 16px;
 }
@@ -384,22 +400,22 @@
 /*  */
 #event{
     width: 100%;
-    height: 70vh;
 }
 #event-container{
+    margin: 0 auto;
     position: relative;
     max-width: 1500px;
-    margin: 0 auto;
-    height: 80vh;
+    width: 95%;
 }
 #event-container ul {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    padding-bottom: 2%;
 }
 #event-container li{
-    margin-right: 8px;
-    float: left;
-    width: 49.7%;
+    margin-right: 16px;
+    width: 100%;
 }
 #event-container li:last-child{
     margin-right: 0px ;
@@ -410,11 +426,7 @@
     border: 1px solid #eee;
 }
 #event-container .more-btn{
-    position: absolute;
-    top: -24px;
-    right: 0;
     margin-top: 0px;
-    /* width: 100%; */
 }
 #event-container .event-title{
     width: 100%;
@@ -426,19 +438,23 @@
 #bestReview{
     position: relative;
     width: 100%;
-    height: 105vh;
-    /* background-color: #aaa; */
 }
 #bestReview-items{
     max-width: 1500px;
+    width: 95%;
     margin: 0 auto;
+}
+#bestReview-items .more-btn{
+    margin-bottom: .5%;
 }
 #bestReview-items ul{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2%;
 }
 #bestReview-items li{
-    float: left;
-    width: calc(100%/4 - 16px);
+    width: calc(100%/3 - 16px);
     margin-right: 16px;
 }
 #bestReview-items li:last-child{
@@ -478,20 +494,21 @@
     z-index: -1;
     background-color: #fff8f0;
     width: 100%;
-    height: 480px;
+    /* height: 480px; */
+    height: calc(100% / 2);
 }
 #instagram{
     width: 100%;
-    height: 72vh;
     overflow: hidden;
 }
 #instagram-items ul{
-    width: 160%;
-    margin-left: 12%;
+    margin-left: calc((100% - 1500px) /2 );
+    width: 200%;
+    display: flex;
+    padding-bottom: 2%;
 }
 #instagram-items li{
-    float: left;
-    width: calc(100%/8 - 16px);
+    /* width: calc(100%/2 - 16px); */
     margin-right: 16px;
 }
 #instagram-items li:last-child{
@@ -499,18 +516,20 @@
 }
 #instagram-items figure > a{
     display: block;
-    height: 320px;
+    width: 100%;
+    height: 400px;
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #eee;
 }
 #instagram-items li img{
     width: 120%;
-    height: 400px;
+    height: 100%;
     object-fit: cover;
-    
 }
 #instagram-items .instagram-title{
+    margin-top: 5%;
+    font-size: 1em;
     text-align: center;
     font-weight: 800;
 }
@@ -518,6 +537,7 @@
     margin: 16px 0;
     width: 100%;
     font-size: 0.9em;
+    line-height: 1.5em;
     cursor: pointer;
     text-align: center;
     overflow: hidden;
@@ -533,7 +553,6 @@
     height: 300px;
     margin-bottom: 4px;
     box-sizing: border-box;
-    /* background-color: #eee; */
 }
 #fl{
     padding: 3% 2%;
@@ -541,7 +560,6 @@
     float: left;
     background-color: #3a3a3a;
     width: calc(60% - 8px);
-    /* width: 59.4%; */
     height: 300px;
     border-radius: 10px;
     color: #fff;
