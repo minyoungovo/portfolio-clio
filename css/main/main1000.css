@@ -17,40 +17,4 @@
     #ranking-chart{
         width: 90%;
     }   
-    #footer{
-        margin-bottom: 1.2vh;
-        height: 250px;
-        font-size: 0.9em;
-    }
-    #fl{
-        margin-right: 0px;
-        padding-top: 3%;
-        width: 68.5%;
-        height: 250px;
-        box-sizing: border-box;
-    }
-    #fl-top .footer-menu{
-        width: 98%;
-        font-size: 0.85em;
-    }
-    #fl-bottom ul{
-        margin-left: 0%;
-        line-height: 24px;
-    }
-    #fl-bottom .info{
-        width: 60%;
-    }
-    #fr{
-        padding: 3% 2%;
-        width: 30%;
-        height: 250px;
-        flex-direction: column;
-        font-size: 0.9em;
-        text-align: center;
-    }
-    #fl-right{
-        margin-top: 1vh;
-        padding-top: 1vh;
-        border-top: 1px solid #ddd;
-    }
 }
