@@ -8,8 +8,7 @@
     }
     #visual .info{
         width: 100%;
-        bottom: 8%;
-        right: 0px;
+        bottom: 8%; right: 0px;
     }
     #family-site ul{
         width: 160%;
@@ -18,8 +17,8 @@
         width: 100%;
     }
     #recommend-items ul{
-        width: 95%;
         margin: 0 auto;
+        width: 95%;
     }
     #recommend li{
         width: calc(100%/2 - 8px);
@@ -31,10 +30,10 @@
         flex-direction: column;
     }
     #bestNew-BigImg{
-        background-size: cover;
+        margin: 0 auto ;
         width: 95%;
         height: 100vh;
-        margin: 0 auto ;
+        background-size: cover;
     }
     #bestNew-items{
         margin: 0 auto;
@@ -42,8 +41,8 @@
         width: 95%;
     }
     #bestNew-items ul{
-        width: 100%;
         margin-left: 0px ;
+        width: 100%;
     }
     #bestNew-items li{
         float: left;
@@ -100,13 +99,13 @@
         margin-right: 0px;
     }
     #ranking-container{
-        flex-direction: column;
         width: 100%;
+        flex-direction: column;
         overflow: hidden;
     }
     #ranking-chart{
-        width: 95%;
         margin: 0 auto;
+        width: 95%;
     }
     #ranking-img{
         margin-left: 2%;
@@ -126,12 +125,12 @@
         border-top: 1px solid #D42D2D;
     }
     #howAbout ul{
-        width: 180%;
         margin-left: 32%;
+        width: 180%;
     }
     #howAbout li{
-        width: calc(100%/4 - 8px);
         margin-right: 8px;
+        width: calc(100%/4 - 8px);
     }
     #event-container{
         width: 95%;
@@ -140,7 +139,7 @@
         flex-direction: column;
     }
     #event-container li:last-child{
-        margin-top: 2%   ;
+        margin-top: 2%;
     }
     #bestReview-items{
         width: 100%;
@@ -149,8 +148,8 @@
         margin: 0 5% 2% 0 ;
     }
     #bestReview-items ul{
-        width: 95%;
         margin: 0 auto;
+        width: 95%;
     }
     #bestReview-items li{
         margin-right: 8px;
@@ -166,27 +165,27 @@
         height: 40vh;
     }
     #instagram-items ul{
-        width: 400%;
         margin-left: 2vw;
+        width: 400%;
     }
     #instagram-items li{
         float: left;
-        width: calc(100%/7 - 8px);
         margin-right: 8px;
         padding-bottom: 2vh;
+        width: calc(100%/7 - 8px);
     }
     #footer{
-        height: auto;
-        text-align: center;
-        background-color: #3a3a3a;
         margin: 0 0 0 0;
+        height: auto;
+        background-color: #3a3a3a;
+        text-align: center;
     }
     #fl{
+        margin-right: 4px;
+        margin: 0 0 0 0;
         float: none;
         width: 100%;
         height: auto;
-        margin-right: 4px;
-        margin: 0 0 0 0;
     }
     #fl-top{
         display: none;
@@ -199,34 +198,35 @@
     }
     #fl-bottom ul{
         margin-left: 0;
+        padding-bottom: 2%;
         line-height: 42px;
         font-size: 1.125em;
-        padding-bottom: 2%;
     }
     #fl-bottom .info{
-        width: 60%;
-        font-size: 0.8em;
         padding-top: 2%;
         margin: 0 auto;
-        color: #aaa;
+        width: 60%;
         border-top: 1px solid rgba(256, 256, 256, .1);
+        font-size: 0.8em;
+        color: #aaa;
     }
     #fr{
         float: none;
+        margin: 0 0 0 0;
         width: 100%;
         background: none;
         border: none;
-        margin: 0 0 0 0;
         color: #aaa;
+    }
+    #fl-left a{
+        margin-right: 4px;
+        line-height: 2em;
+        color: #aaa;
+    }
+    #fl-left a:last-child{
+        margin-right: 0px;
     }
     #fl-right{
         border: none;
-    }
-    #fl-right a{
-        color: #aaa;
-        margin-right: 4px;
-    }
-    #fl-right a:last-child{
-        margin-right: 0px;
     }
 }
