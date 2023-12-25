@@ -1,9 +1,28 @@
 @media screen and (max-width:580px) {
+    #recommend li{
+        width: calc(100%/2 - 4px);
+    }
+    #bestNew-items li {
+        margin-right: 8px;
+        width: calc(100% / 2 - 4px);
+    }
+    #todayS-item li{
+        width: calc(100%/2 - 4px);
+    }
+    #todayS-item li:nth-child(odd) {
+        margin-right: 8px;
+    }
     #ranking-chart .chart .info{
         font-size: 1em;
     }
+    #ranking-img li {
+        margin-right: 8px;
+    }
     #mdPick-items h4{
         font-size: 1.25em;
+    }
+    #mdPick-items figure > a{
+        width: 40%;
     }
     #bestReview-items ul{
         flex-direction: column;

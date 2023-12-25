@@ -18,24 +18,28 @@
         width: 100%;
     }
     #recommend-items ul{
-        width: 90%;
+        width: 95%;
+        margin: 0 auto;
     }
     #recommend li{
-        width: calc(100%/2 - 16px);
+        width: calc(100%/2 - 8px);
+    }
+    #recommend li:nth-child(2n){
+        margin-right: 0px;
     }
     #bestNew-container{
         flex-direction: column;
     }
     #bestNew-BigImg{
         background-size: cover;
-        width: 90%;
+        width: 95%;
         height: 100vh;
         margin: 0 auto ;
     }
     #bestNew-items{
         margin: 0 auto;
         margin-top: 4%;
-        width: 90%;
+        width: 95%;
     }
     #bestNew-items ul{
         width: 100%;
@@ -83,17 +87,16 @@
         background-size: cover;
     }
     #todayS-item{
-        width: 90%;
+        width: 95%;
     }
     #todayS-item li{
         width: calc(100%/2 - 8px);
     }
     #todayS-item li:nth-child(n) {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-right: 16px;
     }
     #todayS-item li:nth-child(2n){
-        margin-left: 16px;
+        margin-left: 0px;
         margin-right: 0px;
     }
     #ranking-container{
@@ -102,12 +105,12 @@
         overflow: hidden;
     }
     #ranking-chart{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     #ranking-img{
         margin-left: 2%;
-        width: 90%;
+        width: 95%;
     }
     #ranking-img ul{
         width: 300%;
@@ -131,7 +134,7 @@
         margin-right: 8px;
     }
     #event-container{
-        width: 90%;
+        width: 95%;
     }
     #event-container ul{
         flex-direction: column;
@@ -146,7 +149,7 @@
         margin: 0 5% 2% 0 ;
     }
     #bestReview-items ul{
-        width: 90%;
+        width: 95%;
         margin: 0 auto;
     }
     #bestReview-items li{
