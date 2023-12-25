@@ -1,8 +1,8 @@
 #header{
     width: 100%;
+    height: 120px;
     position: fixed;
     z-index: 1;
-    /* background-color: #eee; */
     -webkit-transition-duration:0.5s;
     -webkit-transition-timing-function:ease;
     transition-duration:0.5s;
@@ -14,19 +14,26 @@
 }
 #h_top{
     width: 100%;
-    height: 50px;
+    height: 40px;
+    box-sizing: border-box;
 }
-#h_top a{
-    margin-top: 16px;
-    margin-left: 16px;
-    float:right;
+#h_top ul{
+    padding-top: 16px;
+    display: flex;
+    float: right;
+}
+#h_top li{
+    margin-right: 16px;
+}
+#h_top a:last-child{
+    margin-right: 0px;
 }
 #h_bottom{
     width: 100%;
-    height: 100px;
+    height: 80px;
+    line-height: 80px;
 }
 #h_bottom .logo{
-    margin-top: 8px;
     float:left ;
 }
 #h_bottom .logo img{
@@ -34,10 +41,9 @@
 }
 #nav{
     float: right;
-
+    box-sizing: border-box;
 }
 #nav li{
-    padding-top: 16px;
     margin-right: 24px;
     float: left;
 }
@@ -62,24 +68,20 @@
     width: 20%;
     height: 100vh;
     background-color: rgba(256, 256, 256, .8);
-    /* background-color: rgba(0, 0, 0, .8); */
 }
 #full-menu ul{
     margin-top: 64px;
-    /* border: 1px solid red; */
 }
 #full-menu li{
     line-height: 48px;
     font-size: 1.125em;
     text-align: center;
 }
-
 @media screen and (max-width:1500px){
     #header-container{
         width: 95%;
     }
 }
-
 @media screen and (max-width:730px){
     #header{
         height: 80px;

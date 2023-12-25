@@ -19,7 +19,7 @@
     overflow: hidden;
 }
 #family-site ul{
-    padding: 2% 0;
+    padding-top: 2%;
     margin:0 auto;
     max-width: 1500px;
     width: 95%;
@@ -45,6 +45,7 @@
     width: 100%;
 }
 #family-site figcaption{
+    display: none;
     margin-top: 8px;
 }
 #recommend{
