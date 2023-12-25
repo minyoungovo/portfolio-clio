@@ -2,9 +2,6 @@
     #family-site figcaption{
         display: none;
     }
-    .i_btns, .i_review{
-        position: static;
-    }
     #bestNew-items {
         width: 50%;
     }
@@ -20,6 +17,7 @@
     #ranking-chart{
         width: 90%;
     }   
+    
      /*  */
     #footer{
         height: 250px;

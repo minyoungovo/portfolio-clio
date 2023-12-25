@@ -153,13 +153,30 @@ main figcaption{
 
 
 @media screen and (max-width:1000px) {
-    /* .i_btns, .i_review{
+    .discount-price{
+        display: block;
+    }
+    .i_btns, .i_review{
         position: static;
-    } */
-
+    }
     .discount{
         font-size: 1.125em;
     }
 }
 
-
+@media screen and (max-width:730px) {
+    
+    .i_review{
+        position: static;
+    }
+}
+@media screen and (max-width:580px) {
+    main h3.m-title{
+        font-size: 2em;
+    }
+    .i_title {
+        font-size: 1em;
+    }
+    
+    
+}

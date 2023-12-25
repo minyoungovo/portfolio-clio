@@ -11,52 +11,31 @@
         bottom: 8%;
         right: 0px;
     }
-    #family-site{
-    }
     #family-site ul{
-        width: 1000%;
+        width: 160%;
     }
-    #family-site li{
-        width: calc(100% / 9 - 8px);
-        min-width: 100px;
-        max-width: 80px;
-        margin-right: 8px;
-    }
-    #family-site figcaption{
-        display: none;
-    }
-    /* --------------------------- */
     #recommend-items{
         width: 100%;
     }
     #recommend-items ul{
-        width: 95%;
+        width: 90%;
     }
     #recommend li{
-        width: calc(100%/2 - 8px);
-        margin-right: 0px;
+        width: calc(100%/2 - 16px);
     }
-    #recommend li:nth-child(n){
-        margin-left: 0px;
-        margin-right: 16px;
-    }
-    #recommend li:nth-child(2n){
-        margin-right: 0px;
-    }
-    #bestNew{
-        position: relative;
+    #bestNew-container{
+        flex-direction: column;
     }
     #bestNew-BigImg{
         background-size: cover;
-        width: 95%;
-        float: none;
+        width: 90%;
+        height: 100vh;
         margin: 0 auto ;
     }
     #bestNew-items{
         margin: 0 auto;
-        margin-top: 4vh;
-        width: 95%;
-        float: none;
+        margin-top: 4%;
+        width: 90%;
     }
     #bestNew-items ul{
         width: 100%;
@@ -73,6 +52,7 @@
     /*  */
     #main-banner{
         width: 100%;
+        height: 200px;
     }
     #main-banner ul{
         width: 400%;
@@ -80,6 +60,7 @@
     #main-banner li{
         float: left;
         width: 25%;
+        min-height: 200px;
         background-position: 0% 50% !important;
     }
     #main-banner .banner-img1{
@@ -101,14 +82,8 @@
         background: url(./../../images/main/banner/welcome480.jpg) no-repeat 0 50%;
         background-size: cover;
     }
-    /*  */
-    #todayS{
-        /* padding-bottom: 52px; */
-        box-sizing: border-box;
-    }
     #todayS-item{
-        width: 95%;
-        /* height: 120vh; */
+        width: 90%;
     }
     #todayS-item li{
         width: calc(100%/2 - 8px);
@@ -121,33 +96,31 @@
         margin-left: 16px;
         margin-right: 0px;
     }
-    #todayS-item li:last-child{
-        margin-top: 2%;
+    #ranking-container{
+        flex-direction: column;
+        width: 100%;
+        overflow: hidden;
     }
     #ranking-chart{
-    }
-    #ranking-chart .chart li{
+        width: 90%;
+        margin: 0 auto;
     }
     #ranking-img{
+        margin-left: 2%;
+        width: 90%;
     }
     #ranking-img ul{
-        height: auto ;
+        width: 300%;
     }
-    /*  */
     #mdPick-movie{
-        height: 38vh;
+        width: 100%;
+        height: 32vh;
     }
-    #mdPick-items{
-        height: 65vh;
-        padding-bottom: 4%;
+    #mdPick-items ul {
+        flex-direction: column;
     }
-    #mdPick-items li{
-        min-height: 20vh;
-        height: 25vh;        
-    }
-    #howAbout{
-        height: 74vh;
-        min-height: 540px;
+    #mdPick-items li:last-child {
+        border-top: 1px solid #D42D2D;
     }
     #howAbout ul{
         width: 180%;
@@ -157,33 +130,26 @@
         width: calc(100%/4 - 8px);
         margin-right: 8px;
     }
-    /*  */
-    #event{
-        height: auto;
-    }
     #event-container{
-        width: 100%;
-        height: auto;
+        width: 90%;
     }
-    #event-container li{
-        float: none;
-        width: 95%;
-        margin: 0 auto;
-        padding-bottom: 2%;
+    #event-container ul{
+        flex-direction: column;
     }
     #event-container li:last-child{
-        margin: 0 auto;
+        margin-top: 2%   ;
     }
-    /*  */
     #bestReview-items{
         width: 100%;
     }
+    #bestReview-items .more-btn{
+        margin: 0 5% 2% 0 ;
+    }
     #bestReview-items ul{
-        width: 95%;
+        width: 90%;
         margin: 0 auto;
     }
     #bestReview-items li{
-        width: calc(100%/2 - 4px);
         margin-right: 8px;
         padding-bottom: 2%;
     }
@@ -206,8 +172,6 @@
         margin-right: 8px;
         padding-bottom: 2vh;
     }
-
-      /*  */
     #footer{
         height: auto;
         text-align: center;
@@ -262,40 +226,4 @@
     #fl-right a:last-child{
         margin-right: 0px;
     }
-
-
-}
-@media screen and (max-width:580px) {
-
-}
-@media screen and (max-width:480px) {
-    main h3.m-title{
-        font-size: 1.5em;
-    }
-    #family-site{
-        max-height: 150px;
-    }
-    #family-site li{
-        min-width: 80px;
-        max-width: 80px;
-    }
-    #recommend-items{
-        max-height: 800px;
-    }
-    #recommend li{
-        max-height: 400px;
-    }
-    #bestNew-items li{
-        max-height: 400px;
-    }
-    #todayS-item{
-        min-height: 730px;
-    }
-    #ranking-chart{
-        min-height: 400px;
-    }
-    #ranking-img{
-        min-height: 350px;
-    }
-
 }
