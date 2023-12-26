@@ -266,6 +266,9 @@
 #ranking-chart .tabmenu li:hover{
     font-weight: 500;
 }
+#ranking-chart .tabmenu a{
+    display: block;
+}
 #ranking-chart .chart-wrap{
     padding-top: 2%;
     width: 100%;
@@ -273,7 +276,7 @@
     
     margin-bottom: 4%;
 }
-#chart_tab02, #chart_tab03{ display: none;}
+/* #chart_tab02, #chart_tab03{ display: none;} */
 #ranking-chart .chart{
     display: flex;
     width: 100%;

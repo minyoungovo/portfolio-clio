@@ -54,23 +54,21 @@ $(function(){
         });
 
         // $('.tab-swiper-container .tabmenu > li').length / 2
-        const ranking_tabmenu = new Swiper('#ranking .swiper-container',{
+        const ranking_tabmenu = new Swiper('#ranking-chart .tab-swiper-container',{
             slidesPerView: '3', 
-            // spaceBetween: 30,
-            // pagination: '.tab-swiper-pagination',
-            // slidesPerView: 1,
 			paginationClickable: true,
 			loop: false,
-            // paginationBulletRender: function (index, className) {
-			// 	var tabsName = ['App2s', 'Tricks'];
-			// 	if ( index === (tabsName.length - 1) ) {
-          	// 			return	'<span class="' + className + '">'
-          	// 					+ tabsName[index] + '</span>'
-          	// 					+ '<div class="active-mark "></div>';
-			// 	}
-			// 	return '<span class="' + className + '">' + tabsName[index] + '</span>';
-        	// 	}
         });
+
+
+        const rank_img = new Swiper('#ranking-img .swiper-container',{
+            slidesPerView: '3', 
+			// loop: true  ,
+            paginationClickable: false ,
+            simulateTouch : false //드래그 
+        });
+
+      
 
     }
 });
