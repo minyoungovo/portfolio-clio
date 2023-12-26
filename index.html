@@ -24,7 +24,7 @@
     <script src="./js/common/header.js"></script>
     <script src="./js/main/swiperSlide.js"></script>
     <!-- <script src="./js/main/slide.js"></script> -->
-    <!-- <script src="'./js/main/main.js"></script> -->
+    <script src="'./js/main/main.js"></script>
 </head>
 <body>
     <header id="header">
@@ -600,26 +600,29 @@
                 <p class="m-subtitle">카테고리 랭킹</p>
             </header>
             <article id="ranking-container">
-                <article id="ranking-chart" class="tab-swiper-container">
-                    <div class="tab-swiper-pagination">
+                <article id="ranking-chart">
+                    <!-- <div class="tab-swiper-pagination">
+                    </div> -->
+                    <div class="swiper-container">
+                        <ul class="tabmenu swiper-wrapper">
+                            <li class="active swiper-slide"><a hef="#chart_tab01">베이스</a></li>
+                            <li class="swiper-slide"><a hef="#chart_tab02">립</a></li>
+                            <li class="swiper-slide"><a hef="#chart_tab03">아이</a></li>
+                            <li class="swiper-slide"><a hef="#">세럼/에센스</a></li>
+                            <li class="swiper-slide"><a hef="#">치크/컨투어링</a></li>
+                            <li class="swiper-slide"><a hef="#">토너/미스트</a></li>
+                            <li class="swiper-slide"><a hef="#">로션/크림</a></li>
+                            <li class="swiper-slide"><a hef="#">패드/마스크</a></li>
+                            <li class="swiper-slide"><a hef="#">클렌징/선케어</a></li>
+                            <li class="swiper-slide"><a hef="#">헤어케어</a></li>
+                            <li class="swiper-slide"><a hef="#">바디케어</a></li>
+                            <li class="swiper-slide"><a hef="#">홈 프래그런스</a></li>
+                            <li class="swiper-slide"><a hef="#">미용소품/잡화</a></li>
+                            <li class="swiper-slide"><a hef="#">이너뷰티</a></li>
+                        </ul>
                     </div>
-                    <ul class="tabmenu swiper-wrapper">
-                        <li class="active swiper-slide">베이스</li>
-                        <li class="swiper-slide">립</li>
-                        <li class="swiper-slide">아이</li>
-                        <li class="swiper-slide">세럼/에센스</li>
-                        <li class="swiper-slide">치크/컨투어링</li>
-                        <li class="swiper-slide">토너/미스트</li>
-                        <li class="swiper-slide">로션/크림</li>
-                        <li class="swiper-slide">패드/마스크</li>
-                        <li class="swiper-slide">클렌징/선케어</li>
-                        <li class="swiper-slide">헤어케어</li>
-                        <li class="swiper-slide">바디케어</li>
-                        <li class="swiper-slide">홈 프래그런스</li>
-                        <li class="swiper-slide">미용소품/잡화</li>
-                        <li class="swiper-slide">이너뷰티</li>
-                    </ul>
-                    <div class="chart-wrap swiper-wrapper">
+
+                    <div id="chart_tab01" class="chart-wrap">
                         <ul class="chart">
                             <li class="">
                                 <p class="rank">1</p>
@@ -643,6 +646,66 @@
                             </li>
                         </ul>
                     </div>
+
+                    <div id="chart_tab02" class="chart-wrap">
+                        <ul class="chart">
+                            <li class="">
+                                <p class="rank">1</p>
+                                <p class="info">d</p>
+                            </li>
+                            <li class="active">
+                                <p class="rank">2</p>
+                                <p class="info">b</p>
+                            </li>
+                            <li>
+                                <p class="rank">3</p>
+                                <p class="info">c</p>
+                            </li>
+                            <li>
+                                <p class="rank">4</p>
+                                <p class="info">d</p>
+                            </li>
+                            <li>
+                                <p class="rank">5</p>
+                                <p class="info">e</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="chart_tab03" class="chart-wrap">
+                        <ul class="chart">
+                            <li class="">
+                                <p class="rank">1</p>
+                                <p class="info">f</p>
+                            </li>
+                            <li class="active">
+                                <p class="rank">2</p>
+                                <p class="info">g</p>
+                            </li>
+                            <li>
+                                <p class="rank">3</p>
+                                <p class="info">h</p>
+                            </li>
+                            <li>
+                                <p class="rank">4</p>
+                                <p class="info">r</p>
+                            </li>
+                            <li>
+                                <p class="rank">5</p>
+                                <p class="info">j</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+
+
+
+
+
+
+
+
                 </article>
                 <article id="ranking-img">
                     <ul>

@@ -22,8 +22,9 @@ $(function(){
              rewind: true,
             //loopedSlides:4,
             //followFinger:true,
+            speed:500,
             autoplay: {
-              delay: 2500,
+              delay: 5000,
               disableOnInteraction: false,
             },
             pagination: {
@@ -42,8 +43,8 @@ $(function(){
 			// paginationClickable: true,
             loop:true,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '#recommend .swiper-button-next',
+                prevEl: '#recommend .swiper-button-prev',
             },
             pagination: {
                 el: '#recommend .swiper-scrollbar',
@@ -53,22 +54,22 @@ $(function(){
         });
 
         // $('.tab-swiper-container .tabmenu > li').length / 2
-        const ranking_tabmenu = new Swiper('#ranking .tab-swiper-container',{
-            slidesPerView: '5',
+        const ranking_tabmenu = new Swiper('#ranking .swiper-container',{
+            slidesPerView: '3', 
             // spaceBetween: 30,
-            pagination: '.tab-swiper-pagination',
+            // pagination: '.tab-swiper-pagination',
             // slidesPerView: 1,
 			paginationClickable: true,
 			loop: false,
-            paginationBulletRender: function (index, className) {
-				var tabsName = ['App2s', 'Tricks'];
-				if ( index === (tabsName.length - 1) ) {
-          				return	'<span class="' + className + '">'
-          						+ tabsName[index] + '</span>'
-          						+ '<div class="active-mark "></div>';
-				}
-				return '<span class="' + className + '">' + tabsName[index] + '</span>';
-        		}
+            // paginationBulletRender: function (index, className) {
+			// 	var tabsName = ['App2s', 'Tricks'];
+			// 	if ( index === (tabsName.length - 1) ) {
+          	// 			return	'<span class="' + className + '">'
+          	// 					+ tabsName[index] + '</span>'
+          	// 					+ '<div class="active-mark "></div>';
+			// 	}
+			// 	return '<span class="' + className + '">' + tabsName[index] + '</span>';
+        	// 	}
         });
 
     }
