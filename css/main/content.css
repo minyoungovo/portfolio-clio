@@ -165,4 +165,13 @@ main figcaption{
     .i_title {
         font-size: 1em;
     }
+    
+    .i_btns > span{
+        font-size: 0.8em;
+    }
+    .view-btn{
+        width: 80px;
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
 }

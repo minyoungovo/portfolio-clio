@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLUB CLIO</title>
     <link rel="stylesheet" href="./css/fontawesome-free-6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/common/reset.css">
     <link rel="stylesheet" href="./css/common/header.css">
     <link rel="stylesheet" href="./css/main/content.css">
@@ -13,11 +14,15 @@
     <link rel="stylesheet" href="./css/main/main1000.css">
     <link rel="stylesheet" href="./css/main/main730.css">
     <link rel="stylesheet" href="./css/main/main580.css">
-    <!-- <link rel="stylesheet" href="./css/main/slide.css"> -->
+    <link rel="stylesheet" href="./css/main/main320.css">
+    <link rel="stylesheet" href="./css/main/slide.css">
+
     <script src="./js/jquery/jquery-3.7.1.js"></script>
     <script src="./js/fontawesome-free-6.5.1/all.min.js"></script>
-    <script src="./js/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="./js/swiper/swiper-bundle.min.js"></script> -->
     <script src="./js/common/header.js"></script>
+    <script src="./js/main/swiperSlide.js"></script>
     <!-- <script src="./js/main/slide.js"></script> -->
     <!-- <script src="'./js/main/main.js"></script> -->
 </head>
@@ -37,60 +42,56 @@
                         <li class="search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                         <li class="shop"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                         <li class="pouch"><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
-                        <li class="hamburger"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                        <li class="hamburger"><i class="fa-solid fa-bars"></i></li>
                     </ul>
                 </nav>
             </article>
         </section>
         <section id="full-menu">
+            <div class="full-close"><p><i class="fa-solid fa-x"></i></p></div>
             <ul>
-                <li><a href="#">CLIO</a></li>
-                <li>peripera</a></li>
-                <li>goodal</a></li>
-                <li>Dermatory </a></li>
-                <li>Healingbird</a></li>
-                <li>Sim;plain </a></li>
-                <li>TYPE No.</a> </li>
-                <li>ALPHA.B</a></li>
-                <li>TRUE RX</a></li>
+                <li class="active"><a href="#">CLIO</a></li>
+                <li><a href="#">peripera</a></li>
+                <li><a href="#">goodal</a></li>
+                <li><a href="#">Dermatory </a></li>
+                <li><a href="#">Healingbird</a></li>
+                <li><a href="#">Sim;plain </a></li>
+                <li><a href="#">TYPE No.</a> </li>
+                <li><a href="#">ALPHA.B</a></li>
+                <li><a href="#">TRUE RX</a></li>
             </ul>
         </section>
     </header>
     <main id="main">
         <section id="visual">
-            <article class="info">
-                <p class="view-btn">View ></p>
-            </article>
-            <!-- <div class="slider"> -->
-                <!-- 슬라이드 -->
-                <!-- <ul class="list swiper-wrapper">
-                    <li class="swiper-slide">
-                        <a href="#">
-                            <img src="./images/main/visual/visual.png" alt="붕세권">
-                        </a>
-                    </li> -->
-                    <!-- <li class="swiper-slide">2번째 슬라이드</li>
-                    <li class="swiper-slide">3번째 슬라이드</li>
-                    <li class="swiper-slide">4번째 슬라이드</li>
-                    <li class="swiper-slide">5번째 슬라이드</li> -->
-                <!-- </ul> -->
-            
-                <!-- 슬라이드 타이틀 (pagination) -->
-                <!-- <ul class="slide_tit">
-                    <li>1번째 슬라이드</li>
-                    <li>2번째 슬라이드</li>
-                    <li>3번째 슬라이드</li>
-                    <li>4번째 슬라이드</li>
-                    <li>5번째 슬라이드</li>
-                </ul> -->
-            
-                <!-- 버튼, 페이지 번호 -->
-                <!-- <div class="control">
-                    <span class="btn btn_prev">&lt;</span>
-                    <span class="num"></span>
-                    <span class="btn btn_next">&gt;</span>
-                </div> -->
-            <!-- </div> -->
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide slide01"> 
+                        <article class="info">
+                            <p class="view-btn">View ></p>
+                        </article>
+                    </li>
+                    <li class="swiper-slide slide02">
+                        <article class="info">
+                            <p class="view-btn">View ></p>
+                        </article>
+                    </li>
+                    <li class="swiper-slide slide03">
+                        <article class="info">
+                            <p class="view-btn">View ></p>
+                        </article>
+                    </li>
+                    <li class="swiper-slide slide04">
+                        <article class="info">
+                            <p class="view-btn">View ></p>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-navigation">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <section id="family-site">
             <ul>
@@ -156,118 +157,225 @@
                 <p class="m-subtitle">추천상품</p>
             </header>
             <article id="recommend-items">
-                <ul>
-                    <li>
-                        <figure>
-                            <a href="#"><img src="./images/main/item/basic_0000004801.gif" alt="★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]"></a>
-                            <figcaption>
-                                <p class="i_brand recommend-brand">클리오</p>
-                                <p class="i_title recommend-title">
-                                    <a href="#">
-                                        ★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]
-                                    </a>
-                                </p>
-                                <p class="i_prcie recommend-prcie">
-                                    <span class="discount-price">12,600원</span>
-                                    <span class="cost-price">18,000원</span>
-                                    <span class="discount">25%</span>
-                                </p>
-                                <p class="i_btns recommend-btns">
-                                    <span class="best-btn">Best</span>
-                                    <span class="new-btn">New</span>
-                                </p>
-                                <p class="i_review recommend-review"><a href="#">
-                                    <span class="review-star"><i class="fa-solid fa-star"></i></span>
-                                    <span class="review-rating">4.9</span>
-                                    <span class="review-people">(372)</span>
-                                </a></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="#"><img src="./images/main/item/m_0000003203.gif" alt=" [1+1] 샤프 쏘 심플 워터프루프 펜슬 라이너 [증정]클렌징폼 미니"></a>
-                            <figcaption>
-                                <p class="i_brand recommend-brand">클리오</p>
-                                <p class="i_title recommend-title">
-                                    <a href="#">
-                                        [1+1] 샤프 쏘 심플 워터프루프 펜슬 라이너 [증정]클렌징폼 미니
-                                    </a>
-                                </p>
-                                <p class="i_prcie recommend-prcie">
-                                    <span class="discount-price">13,000원</span>
-                                    <span class="cost-price">20,000원</span>
-                                    <span class="discount">35%</span>
-                                </p>
-                                <p class="i_btns recommend-btns">
-                                    <span class="best-btn">Best</span>
-                                    <span class="onePone-btn">1+1</span>
-                                </p>
-                                <p class="i_review recommend-review"><a href="#">
-                                    <span class="review-star"><i class="fa-solid fa-star"></i></span>
-                                    <span class="review-rating">4.9</span>
-                                    <span class="review-people">(372)</span>
-                                </a></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="#"><img src="./images/main/item/basic_0000004462.gif" alt="[NEW 컬러] 크리스탈 글램틴트"></a>
-                            <figcaption>
-                                <p class="i_brand recommend-brand">클리오</p>
-                                <p class="i_title recommend-title">
-                                    <a href="#">
-                                        [NEW 컬러] 크리스탈 글램틴트
-                                </p>
-                                <p class="i_prcie recommend-prcie">
-                                    <span class="discount-price">12,100원</span>
-                                    <span class="cost-price">18,000원</span>
-                                    <span class="discount">33%</span>
-                                </p>
-                                <p class="i_btns recommend-btns">
-                                    <span class="new-btn">New</span>
-                                </p>
-                                <p class="i_review recommend-review"><a href="#">
-                                    <span class="review-star"><i class="fa-solid fa-star"></i></span>
-                                    <span class="review-rating">4.9</span>
-                                    <span class="review-people">(901)</span>
-                                </a></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <a href="#"><img src="./images/main/item/basic_0000003936.gif" alt="[NEW 컬러/공식몰ONLY] 잉크 글래스팅 립글로스"></a>
-                            <figcaption>
-                                <p class="i_brand recommend-brand">클리오</p>
-                                <p class="i_title recommend-title">
-                                    <a href="#">
-                                        [NEW 컬러/공식몰ONLY] 잉크 글래스팅 립글로스
-                                    </a>
-                                </p>
-                                <p class="i_prcie recommend-prcie">
-                                    <span class="discount-price">9,600원</span>
-                                    <span class="cost-price">12,000원</span>
-                                    <span class="discount">20%</span>
-                                </p>
-                                <p class="i_btns recommend-btns">
-                                    <span class="best-btn">Best</span>
-                                    <span class="dandok-btn">온라인단독</span>
-                                </p>
-                                <p class="i_review recommend-review"><a href="#">
-                                    <span class="review-star"><i class="fa-solid fa-star"></i></span>
-                                    <span class="review-rating">4.9</span>
-                                    <span class="review-people">(1,008)</span>
-                                </a></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/basic_0000004801.gif" alt="★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            ★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]
+                                        </a>
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">12,600원</span>
+                                        <span class="cost-price">18,000원</span>
+                                        <span class="discount">25%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="best-btn">Best</span>
+                                        <span class="new-btn">New</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(372)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/m_0000003203.gif" alt=" [1+1] 샤프 쏘 심플 워터프루프 펜슬 라이너 [증정]클렌징폼 미니"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            [1+1] 샤프 쏘 심플 워터프루프 펜슬 라이너 [증정]클렌징폼 미니
+                                        </a>
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">13,000원</span>
+                                        <span class="cost-price">20,000원</span>
+                                        <span class="discount">35%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="best-btn">Best</span>
+                                        <span class="onePone-btn">1+1</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(372)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/basic_0000004462.gif" alt="[NEW 컬러] 크리스탈 글램틴트"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            [NEW 컬러] 크리스탈 글램틴트
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">12,100원</span>
+                                        <span class="cost-price">18,000원</span>
+                                        <span class="discount">33%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="new-btn">New</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(901)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/basic_0000003936.gif" alt="[NEW 컬러/공식몰ONLY] 잉크 글래스팅 립글로스"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            [NEW 컬러/공식몰ONLY] 잉크 글래스팅 립글로스
+                                        </a>
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">9,600원</span>
+                                        <span class="cost-price">12,000원</span>
+                                        <span class="discount">20%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="best-btn">Best</span>
+                                        <span class="dandok-btn">온라인단독</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(1,008)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/basic_0000003794.gif" alt="쉐이드 앤 섀도우 팔레트"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            쉐이드 앤 섀도우 팔레트
+                                        </a>
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">23,800원</span>
+                                        <span class="cost-price">34,000원</span>
+                                        <span class="discount">30%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(647)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/m_0000003703.gif" alt="[NEW/붕세권 에디션] 쉬폰 블러 틴트"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            [NEW/붕세권 에디션] 쉬폰 블러 틴트
+                                        </a>
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">12,600원</span>
+                                        <span class="cost-price">18,000원</span>
+                                        <span class="discount">30%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="new-btn">New</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(1,068)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/basic_0000004563.gif" alt="프로 아이 팔레트 에어 [증정] 브러쉬 세트"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            프로 아이 팔레트 에어 [증정] 브러쉬 세트
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">25,500원</span>
+                                        <span class="cost-price">34,000원</span>
+                                        <span class="discount">25%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="new-btn">New</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(1,276)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="swiper-slide">
+                            <figure>
+                                <a href="#"><img src="./images/main/item/m_0000004523.gif" alt="[NEW 컬러] 퓨어 블러 틴트"></a>
+                                <figcaption>
+                                    <p class="i_brand recommend-brand">클리오</p>
+                                    <p class="i_title recommend-title">
+                                        <a href="#">
+                                            [NEW 컬러] 퓨어 블러 틴트
+                                    </p>
+                                    <p class="i_prcie recommend-prcie">
+                                        <span class="discount-price">11,800원</span>
+                                        <span class="cost-price">18,000원</span>
+                                        <span class="discount">34%</span>
+                                    </p>
+                                    <p class="i_btns recommend-btns">
+                                        <span class="new-btn">New</span>
+                                    </p>
+                                    <p class="i_review recommend-review"><a href="#">
+                                        <span class="review-star"><i class="fa-solid fa-star"></i></span>
+                                        <span class="review-rating">4.9</span>
+                                        <span class="review-people">(474)</span>
+                                    </a></p>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
             </article>
             <article id="recommend-slidebar">
-                <!-- swiper.js  사용 -->
+                    <div class="swiper-scrollbar"> <div class="progress"></div></div>
             </article>
+            <div class="swiper-navigation">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
         <section id="bestNew">
             <header id="bestNew-header">
@@ -490,45 +598,49 @@
                 <p class="m-subtitle">카테고리 랭킹</p>
             </header>
             <article id="ranking-container">
-                <article id="ranking-chart">
-                    <ul class="tabmenu">
-                        <li class="active">베이스</li>
-                        <li>립</li>
-                        <li>아이</li>
-                        <li>세럼/에센스</li>
-                        <li>치크/컨투어링</li>
-                        <li>토너/미스트</li>
-                        <li>로션/크림</li>
-                        <li>패드/마스크</li>
-                        <li>클렌징/선케어</li>
-                        <li>헤어케어</li>
-                        <li>바디케어</li>
-                        <li>홈 프래그런스</li>
-                        <li>미용소품/잡화</li>
-                        <li>이너뷰티</li>
+                <article id="ranking-chart" class="tab-swiper-container">
+                    <div class="tab-swiper-pagination">
+                    </div>
+                    <ul class="tabmenu swiper-wrapper">
+                        <li class="active swiper-slide">베이스</li>
+                        <li class="swiper-slide">립</li>
+                        <li class="swiper-slide">아이</li>
+                        <li class="swiper-slide">세럼/에센스</li>
+                        <li class="swiper-slide">치크/컨투어링</li>
+                        <li class="swiper-slide">토너/미스트</li>
+                        <li class="swiper-slide">로션/크림</li>
+                        <li class="swiper-slide">패드/마스크</li>
+                        <li class="swiper-slide">클렌징/선케어</li>
+                        <li class="swiper-slide">헤어케어</li>
+                        <li class="swiper-slide">바디케어</li>
+                        <li class="swiper-slide">홈 프래그런스</li>
+                        <li class="swiper-slide">미용소품/잡화</li>
+                        <li class="swiper-slide">이너뷰티</li>
                     </ul>
-                    <ul class="chart">
-                        <li class="">
-                            <p class="rank">1</p>
-                            <p class="info">[클리오] [패딩에디션] 킬커버 메쉬 글로우쿠션 기획세트 [본품+리필] [증정] 킬커버퍼프3p</p>
-                        </li>
-                        <li class="active">
-                            <p class="rank">2</p>
-                            <p class="info">★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]</p>
-                        </li>
-                        <li>
-                            <p class="rank">3</p>
-                            <p class="info">[페리페라] 무드 핏 커버 쿠션 [증정] 미니쿠션 깔끔핏</p>
-                        </li>
-                        <li>
-                            <p class="rank">4</p>
-                            <p class="info">[클리오] ★회원전용 상품★킬커버 메쉬 글로우쿠션 미니 5g</p>
-                        </li>
-                        <li>
-                            <p class="rank">5</p>
-                            <p class="info">[클리오] 킬커버 파운웨어 더뉴쿠션 기획세트 [본품+리필] [증정] 킬커버퍼프3p</p>
-                        </li>
-                    </ul>
+                    <div class="chart-wrap swiper-wrapper">
+                        <ul class="chart">
+                            <li class="">
+                                <p class="rank">1</p>
+                                <p class="info">[클리오] [패딩에디션] 킬커버 메쉬 글로우쿠션 기획세트 [본품+리필] [증정] 킬커버퍼프3p</p>
+                            </li>
+                            <li class="active">
+                                <p class="rank">2</p>
+                                <p class="info">★한정패키지+신상컬러 포함★ 30주년 SET [메쉬쿠션+프아팔에어+킬래쉬 마스카라+샤프쏘라이너+코듀로이백 구성]</p>
+                            </li>
+                            <li>
+                                <p class="rank">3</p>
+                                <p class="info">[페리페라] 무드 핏 커버 쿠션 [증정] 미니쿠션 깔끔핏</p>
+                            </li>
+                            <li>
+                                <p class="rank">4</p>
+                                <p class="info">[클리오] ★회원전용 상품★킬커버 메쉬 글로우쿠션 미니 5g</p>
+                            </li>
+                            <li>
+                                <p class="rank">5</p>
+                                <p class="info">[클리오] 킬커버 파운웨어 더뉴쿠션 기획세트 [본품+리필] [증정] 킬커버퍼프3p</p>
+                            </li>
+                        </ul>
+                    </div>
                 </article>
                 <article id="ranking-img">
                     <ul>

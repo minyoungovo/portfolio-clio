@@ -1,4 +1,7 @@
 @media screen and (max-width:1500px){
+    .swiper-navigation{
+        display: none;
+    }
     #ranking-chart, #howAbout ul, #instagram-items ul{
         margin-left: 4%;
     }

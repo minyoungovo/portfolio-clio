@@ -3,12 +3,16 @@
         height: auto;
     }
     #visual{
-        background: url(./../../images/main/visual/visual_mb480.png) no-repeat 35% 0;
-        background-size: cover;
+        background: url(./../../images/main/visual/visual_mb730.png) no-repeat 30% 0;
+        /* background-size: contain; */
+        height: 500px;
+        /* background-size: 500px; */
+        /* background-size: cover; */
     }
     #visual .info{
         width: 100%;
-        bottom: 8%; right: 0px;
+        bottom: 8%; 
+        right: 0px; left: 0px;
     }
     #family-site ul{
         width: 160%;
@@ -19,12 +23,13 @@
     #recommend-items ul{
         margin: 0 auto;
         width: 95%;
+        /* flex-wrap: wrap; */
     }
     #recommend li{
         width: calc(100%/2 - 8px);
     }
     #recommend li:nth-child(2n){
-        margin-right: 0px;
+        /* margin-right: 0px; */
     }
     #bestNew-container{
         flex-direction: column;

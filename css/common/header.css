@@ -2,14 +2,15 @@
     width: 100%;
     height: 120px;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     -webkit-transition-duration:0.5s;
     -webkit-transition-timing-function:ease;
     transition-duration:0.5s;
     transition-timing-function:ease;
 }
 #header-container{
-    max-width: 1500px;
+    max-width: 1800px;
+    width: 95%;
     margin:0 auto;
 }
 #h_top{
@@ -46,12 +47,17 @@
 #nav li{
     margin-right: 24px;
     float: left;
+    font-size: 2em;
 }
 #nav li:last-child{
     margin-right: 0px;
 }
 #nav a{
-    font-size: 2em;
+    /* font-size: 2em; */
+}
+#nav .hamburger{
+    cursor: pointer;
+    /* font-size: 2em; */
 }
 .header-scroll {
     border-bottom:1px solid #eee;
@@ -65,21 +71,54 @@
     display: none;
     position: absolute;
     top: 0; right: 0;
-    width: 20%;
+    width: 300px;
     height: 100vh;
-    background-color: rgba(256, 256, 256, .8);
+    background-color: rgba(256, 256, 256, .9);
+    border-left: 1px solid #eee;
+    box-shadow: 0 0 8px 1px #d5d5d5;
+    z-index: 999;
+    /* transition: all 0.2s ease-in-out; */
 }
 #full-menu ul{
-    margin-top: 64px;
+    margin-top: 112px;
 }
 #full-menu li{
-    line-height: 48px;
-    font-size: 1.125em;
+    line-height: 56px;
+    font-size: 1.25em;
     text-align: center;
+    /* transition:all 2s ease-out 1s; */
+}
+#full-menu a:hover{
+    font-weight: bold;
+}
+#full-menu .full-close{
+    position: relative;
+    cursor: pointer;
+}
+#full-menu .full-close p{
+    /* display: block; */
+    position: absolute;
+    top: 56px; right: 0px;
+    padding-right: 18%;
+    font-size: 2em;
+}
+
+@media screen and (max-width:1800px){
+    #full-menu .full-close{
+        padding-right: 16%;
+    }
 }
 @media screen and (max-width:1500px){
     #header-container{
         width: 95%;
+    }
+    #full-menu .full-close p{
+        padding-right: 13%;
+    }
+}
+@media screen and (max-width:1200px){
+    #full-menu .full-close p{
+        padding-right: 8%;
     }
 }
 @media screen and (max-width:730px){
@@ -101,13 +140,24 @@
         margin-top: 4px;
     }
     #h_bottom .logo img{
-        width: 160px;
+        width: 140px;
     }
     #nav li{
         padding-top: 0px;
         margin-right: 12px;
     }
     #nav a{
-        font-size: 1.5em;
+        font-size: 1.25em;
+    }
+    #full-menu{
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px){
+    #h_bottom .logo img{
+        width: 120px;
+    }
+    #nav a{
+        font-size: 1.125em;
     }
 }

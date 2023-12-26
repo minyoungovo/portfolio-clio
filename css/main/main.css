@@ -5,15 +5,51 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(./../../images/main/visual/visual.png) no-repeat 30% 0;
-    background-size: cover;
     overflow: hidden;
 }
 #visual .info{
     position: absolute;
     bottom: 15%;
     left: 30%;
+    z-index: 1;
 }
+#visual .swiper-slide:nth-child(1){
+    width: 100%;
+    height: 100vh;
+    background: url(./../../images/main/visual/visual.png) no-repeat 30% 0;
+    background-size: cover;
+}
+#visual .swiper-slide:nth-child(2){
+    width: 100%;
+    height: 100vh;
+    background: url(./../../images/main/visual/visual01.jpg) no-repeat 20% 0;
+    background-size: cover;
+}
+#visual .swiper-slide:nth-child(3){
+    width: 100%;
+    height: 100vh;
+    background: url(./../../images/main/visual/visual02.jpg) no-repeat 30% 0;
+    background-size: cover;
+}
+#visual .swiper-slide:nth-child(4){
+    width: 100%;
+    height: 100vh;
+    background: url(./../../images/main/visual/visual03.jpg) no-repeat 30% 0;
+    background-size: cover;
+}
+#visual .swiper-button-prev, #visual .swiper-button-next{
+    --swiper-theme-color: rgba(255, 255, 255, .5);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1000px;
+    width: 80px ; height: 80px;
+    transition: all ease-in-out .3s ;
+}
+#visual .swiper-button-prev:hover, #visual .swiper-button-next:hover{
+    --swiper-theme-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 #family-site{
     width: 100%;
     overflow: hidden;
@@ -49,18 +85,20 @@
     margin-top: 8px;
 }
 #recommend{
+    position: relative;
     width: 100%;
 }
  #recommend-items{
     margin:0 auto;
     width: 95%;
     max-width: 1500px;
+    overflow: hidden;
 }
  #recommend ul{
     margin: 0 auto ;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -70,7 +108,7 @@
     padding-bottom: 2%;
 }
 #recommend li:last-child{
-    margin-right:0px;
+    /* margin-right:0px; */
 }
 #recommend figure > a{
     display: block;
@@ -95,7 +133,7 @@
     max-width: 1500px;
     width: 95%;
     height: 5px ;
-    background: #ffe8e8;
+    /* background: #ffe8e8; */
 }
 #bestNew{
     width: 100%;
@@ -206,6 +244,8 @@
 }
 #ranking-chart .tabmenu{
     width: 1000%;
+    height: auto;
+
     display: flex;
 }
 #ranking-chart .tabmenu li{
@@ -221,14 +261,19 @@
 #ranking-chart .tabmenu li:hover{
     font-weight: 500;
 }
-#ranking-chart .chart{
+#ranking-chart .chart-wrap{
     padding-top: 2%;
     width: 100%;
     height: 100%;
+    
+    margin-bottom: 4%;
+}
+#ranking-chart .chart{
     display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     box-sizing: border-box;
-    margin-bottom: 4%;
 }
 #ranking-chart .chart li{
     height: calc(100% / 5); 

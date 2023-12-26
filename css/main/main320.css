@@ -1,0 +1,16 @@
+@media screen and (max-width:480px) {
+    #visual{
+        background: url(./../../images/main/visual/visual_mb480.png) no-repeat 55% 0;
+        height: 650px;
+        /* background-size: cover; */
+    }
+
+}
+@media screen and (max-width:320px) {
+    #visual{
+        background: url(./../../images/main/visual/visual_mb320.png) no-repeat 15% 0;
+        height: 360px;
+        /* background-size: cover; */
+    }
+
+}
