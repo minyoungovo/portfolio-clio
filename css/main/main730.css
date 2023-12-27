@@ -18,11 +18,11 @@
         width: 160%;
     }
     #recommend-items{
-        width: 100%;
+        width: 95%;
     }
     #recommend-items ul{
         margin: 0 auto;
-        width: 95%;
+        width: 100%;
         /* flex-wrap: wrap; */
     }
     #recommend li{

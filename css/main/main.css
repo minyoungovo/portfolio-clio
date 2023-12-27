@@ -325,22 +325,26 @@
 }
 #ranking-img{
     width: 60%;
+    /* margin-right: 10%; */
+    /* box-sizing: border-box; */
     overflow: hidden;
+
 }
 #ranking-img ul{
-    width: 150%;
+    width: 100%;
     display: flex;
 }
 #ranking-img li{
     padding: 2% 0;
     width: 100%;
-    margin-right: 16px;
+    /* margin-right: 16px; */
     opacity: .4;
+    box-sizing: border-box;
 }
 #ranking-img li:last-child{
     margin-right: 0px;
 }
-#ranking-img li.active{
+#ranking-img li.swiper-slide-active{
     opacity: 1;
 }
 #ranking-img img{

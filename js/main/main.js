@@ -22,11 +22,31 @@ $(function(){
             listWidth += $(this).outerWidth();
         });
 
-        let newPosition = (listWidth / 5) * (index-1); //중앙에 놓을 수 있는 법 없을까?
+        let newPosition = (listWidth / 5) * (index - 1); //중앙에 놓을 수 있는 법 없을까?
+
+        /*
+            슬라이드 탭 메뉴 클릭 시 조건문 걸어서 멈추게 해서
+            
+        */
+
+
+        //data-swiper-slide-index
+        console.log($('#ranking-img .swiper-slide:nth-child(' + index + ')').attr('class'));
+
+        $('#ranking-img .swiper-slide:nth-child(' + index + ')').addClass('swiper-slide-active');
+       
+        // if ($("'#ranking-img .swiper-slide").attr('data-swiper-slide-index') !== undefined) {
+        //     alert('The name attribute exists');
+        // }else {
+        //     let NewStyle = $("'#ranking-img .swiper-slide").attr('data-swiper-slide-index').index(newPosition);
+        //     NewStyle.addClass('swiper-slide-active');
+            
+        // }
+
         //슬라이드를 새 위치로 이동시키는 애니메이션 설정
         $('#ranking-img .swiper-slide').css({
-            "transform": `translate3d(${-newPosition}px, 0, 0)`,
-            "transition-duration": "500ms"
+            //"transform": `translate3d(${-newPosition}px, 0, 0)`,
+            //"transition-duration": "500ms"
         });
 
 
