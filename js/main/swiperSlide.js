@@ -87,6 +87,20 @@ $(function(){
             }
             
         });
+
+        const howAbout_swiper = new Swiper('#howAbout .swiper-container',{
+            slidesPerView: '3', 
+            spaceBetween: 16,
+            paginationClickable: false,
+            loop: false,
+        });
+
+        const instagram_swiper = new Swiper('#instagram .swiper-container',{
+            slidesPerView: '5', 
+            spaceBetween: 16,
+            paginationClickable: false,
+            loop: false,
+        });
     }
 });
  

@@ -30,20 +30,18 @@ const tab = function() {
     //탭메뉴 실행 함수
     const activateTab = function(tabId) {
         //모든 아이템 초기화
-        //$("#ranking-chart .tabmenu > li").removeClass("active");
+        $("#ranking-chart .tabmenu > li").removeClass("active");
         $("#ranking-chart .chart-wrap").hide();
         $('#ranking-img ul').hide();
 
          //02. 탭 메뉴의 리스트 출력
         //active 클래스 추가
         console.log( $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent());
-        //$(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().addClass("active");
+        $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().addClass("active");
         $(tabId).show(); //카테고리 리스트 
         $('#ranking-img ' + tabId + '_rank').show(); //이미지 리스트
 
         const arr = tabId.split("#");
-
-        console.log(arr[1]);
 
         //03. 탭 메뉴의 이미지 리스트 출력
         var rank_img = new Swiper('#ranking-img .swiper-container-' + arr[1],{
