@@ -14,7 +14,22 @@
     #main-banner li{
         background-position: 30% 0 !important;
     }
+    #ranking-container{
+        flex-direction: column;
+    }
     #ranking-chart{
-        width: 90%;
+        width: 95%;
+        margin: 0 auto;
     }   
+    #ranking-chart .tabmenu li{
+        padding: 8px 0px
+    }
+    #ranking-img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #howAbout .swiper-container{
+        width: 95%;
+    }
+    
 }

@@ -2,12 +2,31 @@
     main > section > header{
         height: auto;
     }
+    #nav li{
+        font-size: 1.125em;
+    }
     #visual{
+        height: 50vh;
+    }
+    #visual .swiper-slide{
+        width: 100%;
+        height: 50vh;
+    }
+    #visual .swiper-slide:nth-child(1){
         background: url(./../../images/main/visual/visual_mb730.png) no-repeat 30% 0;
-        /* background-size: contain; */
-        height: 500px;
-        /* background-size: 500px; */
-        /* background-size: cover; */
+        background-size: cover;
+    }
+    #visual .swiper-slide:nth-child(2){
+        background: url(./../../images/main/visual/visual01.jpg) no-repeat 20% 0;
+        background-size: cover;
+    }
+    #visual .swiper-slide:nth-child(3){
+        background: url(./../../images/main/visual/visual02.jpg) no-repeat 30% 0;
+        background-size: cover;
+    }
+    #visual .swiper-slide:nth-child(4){
+        background: url(./../../images/main/visual/visual03.jpg) no-repeat 30% 0;
+        background-size: cover;
     }
     #visual .info{
         width: 100%;
@@ -15,7 +34,12 @@
         right: 0px; left: 0px;
     }
     #family-site ul{
-        width: 160%;
+        /* width: 160%; */
+        width: 95%;
+        justify-content: start
+    }
+    #family-site li {
+        width: calc(100% / 5 - 1%);
     }
     #recommend-items{
         width: 95%;
@@ -60,34 +84,28 @@
     /*  */
     #main-banner{
         width: 100%;
-        height: 200px;
-    }
-    #main-banner ul{
-        width: 400%;
+        height: 30vh;
     }
     #main-banner li{
         float: left;
         width: 25%;
-        min-height: 200px;
-        background-position: 0% 50% !important;
+        height: 30vh;
+        cursor: pointer;
     }
     #main-banner .banner-img1{
-        background: url(./../../images/main/banner/banner480_1.jpg) no-repeat 0 50%;
+        background: url(./../../images/main/banner/banner480_1.jpg) no-repeat 0 0 ;
         background-size: cover;
     }
     #main-banner .banner-img2{
-        display: block;
-        background: url(./../../images/main/banner/banner480_2.jpg) no-repeat 0 50%;
+        background: url(./../../images/main/banner/banner480_2.jpg) no-repeat 50% 0 ;
         background-size: cover;
     }
     #main-banner .banner-img3{
-        display: block;
-        background: url(./../../images/main/banner/banner480_3.jpg) no-repeat 0 50%;
+        background: url(./../../images/main/banner//banner480_3.jpg) no-repeat 50% 0 ;
         background-size: cover;
     }
     #main-banner .banner-img4{
-        display: block;
-        background: url(./../../images/main/banner/welcome480.jpg) no-repeat 0 50%;
+        background: url(./../../images/main/banner//banner480_4.jpg) no-repeat 50% 0 ;
         background-size: cover;
     }
     #todayS-item{
@@ -129,12 +147,8 @@
     #mdPick-items li:last-child {
         border-top: 1px solid #D42D2D;
     }
-    #howAbout ul{
-        margin-left: 32%;
-        width: 180%;
-    }
     #howAbout li{
-        margin-right: 8px;
+        /* margin-right: 8px; */
         width: calc(100%/4 - 8px);
     }
     #event-container{

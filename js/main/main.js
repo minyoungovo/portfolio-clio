@@ -1,11 +1,6 @@
 $(function(){
     tab_menu();
     tab();
-    
-    //랭킹 리스트 클릭 이벤트
-    $('#ranking-chart .info').click(function(){
-
-    });
 });
 
 const tab_menu = function(){
@@ -15,29 +10,19 @@ const tab_menu = function(){
         loop: false,
     });
 }
-
-
-/* =========== 랭킹 카테고리 =========== */
 const tab = function() {
-    //01. 탭메뉴 클릭할 때 실행
-    $("#ranking-chart .tabmenu > li a").on("click", function(e) {
-        e.preventDefault();
-        let tabId = $(this).attr("href");
-
-        activateTab(tabId);
-    });
-
-    //탭메뉴 실행 함수
     const activateTab = function(tabId) {
         //모든 아이템 초기화
-        $("#ranking-chart .tabmenu > li").removeClass("active");
+        //$("#ranking-chart .tabmenu > li").removeClass("active");
+        //$("#ranking-chart .tabmenu > li").removeClass("swiper-slide-active");
         $("#ranking-chart .chart-wrap").hide();
         $('#ranking-img ul').hide();
 
+        rankChartSlide();
+        allReset(tabId);
+
          //02. 탭 메뉴의 리스트 출력
-        //active 클래스 추가
-        console.log( $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent());
-        $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().addClass("active");
+         //초기화
         $(tabId).show(); //카테고리 리스트 
         $('#ranking-img ' + tabId + '_rank').show(); //이미지 리스트
 
@@ -47,17 +32,17 @@ const tab = function() {
         var rank_img = new Swiper('#ranking-img .swiper-container-' + arr[1],{
             slidesPerView: 2, 
             spaceBetween: 16,
-            loop: true  ,
-            loopedSlides: 2,
-            // rewind : true,
-            // loopAdditionalSlides : 1,
+            loop: true, loopedSlides: 2,
             paginationClickable: false ,
             simulateTouch : false,  //드래그 
             centeredSlides: true,
             speed:500,
+            //observer: true,
+            // observeParents: true,
+            initialSlide:0,
             autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+                delay: 3000,
+                disableOnInteraction: false,
             },
             breakpoints : {
                 640: {
@@ -68,38 +53,24 @@ const tab = function() {
                 },
             },
             on: {
-                init: function () {
-                    let parentId = $('#ranking-chart .tabmenu .swiper-slide-active > a').attr('href');
-                    console.log(parentId);
-                },
                 slideChange : function() {
                     $('#ranking-chart .chart li').removeClass('active');
+
                     let parentId = $('#ranking-chart .tabmenu .swiper-slide-active > a').attr('href');
-                    //console.log('TEST : ' + $('#ranking-chart .tabmenu .swiper-slide-active > a').attr('href'));
                     $(parentId + ' .chart li:nth-child(' + (this.realIndex + 1) + ')').addClass('active');
-
-
-                    console.log(parentId);
-
-                    // console.log(this.realIndex);
-                    // console.log(this);
-                    // //1. 초기화
-                    // $('#ranking-chart .chart li').removeClass('active');
-                    
-                    //이벤트 또는 조건문으로 이용하면 된다.
                 },
             }
         });
     }
-
     //04. 초기값 설정
     activateTab('#chart_tab01');
 }
-
 $(window).resize(function(){
     //페이지 로드 했을 때 탭메뉴 선택
-    let firstTabId = $('#ranking-chart .tabmenu > li:first-child a').attr('href');
-    activateTab(firstTabId);
+   // let firstTabId = $('#ranking-chart .tabmenu > li:first-child a').attr('href');
+    //activateTab(firstTabId);
+    //tab();
+    // activateTab('#chart_tab01');
 });
 
 //랭킹 리스트
@@ -117,6 +88,16 @@ const rankChartSlide = function () {
     else{index++;}
 };
 
-//카테고리 랭킹 리스트 - 자동 애니메이션 효과
-//setInterval(rankChartSlide, 3000);
+const allReset = function(tabId){
+    // $(`${tabId}_rank > li`).removeClass('swiper-slide-active');
+    // $(`${tabId}_rank > li`).removeClass('swiper-slide-prev');
+    // $(`${tabId}_rank > li`).removeClass('swiper-slide-next');
 
+    // $(`#ranking-chart .tabmenu > li`).removeClass('swiper-slide-active');
+    // $(`#ranking-chart .tabmenu > li`).removeClass('swiper-slide-prev');
+    // $(`#ranking-chart .tabmenu > li`).removeClass('swiper-slide-next');
+
+    $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().addClass("swiper-slide-active");
+    $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().prev().addClass("swiper-slide-prev");
+    $(`#ranking-chart .tabmenu > li a[href*="${tabId}"]`).parent().next().addClass("swiper-slide-next");
+}

@@ -1,4 +1,7 @@
 @media screen and (max-width:580px) {
+    #nav li{
+        font-size: 1em;
+    }
     #recommend li{
         width: calc(100%/2 - 4px);
     }

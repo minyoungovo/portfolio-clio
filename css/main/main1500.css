@@ -2,7 +2,7 @@
     .swiper-navigation{
         display: none;
     }
-    #ranking-chart, #howAbout ul, #instagram-items ul{
+    #ranking-chart, #instagram-items ul{
         margin-left: 4%;
     }
     #ranking-chart{
