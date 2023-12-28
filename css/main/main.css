@@ -164,6 +164,7 @@
     border:1px solid #eee;
 }
 #main-banner{
+    position: relative;
     margin: 2% 0;
     width: 100%;
     min-width: 140px;
