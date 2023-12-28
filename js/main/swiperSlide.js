@@ -109,23 +109,19 @@ $(function(){
             breakpoints : {
                 0: {
                     slidesPerView: 1,
-                    spaceBetween: 10,
+                    spaceBetween: 16,
                 },
                 480: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
-                },
-                580:{
-                    slidesPerView: 3,
-                    spaceBetween: 10,
+                    spaceBetween: 16,
                 },
                 730:{
-                    slidesPerView: 4,
-                    spaceBetween: 10,
+                    slidesPerView: 3,
+                    spaceBetween: 16,
                 },
                 1500: {
                     slidesPerView: 5,
-                    spaceBetween: 10,
+                    spaceBetween: 16,
                 },
             }
         });

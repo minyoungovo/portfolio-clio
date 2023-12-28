@@ -168,7 +168,7 @@
     }
     #bestReview-items ul{
         margin: 0 auto;
-        width: 95%;
+        width: 90%;
     }
     #bestReview-items li{
         margin-right: 8px;
@@ -184,7 +184,7 @@
         height: 40vh;
     }
     #instagram-items ul{
-        margin-left: 2vw;
+        /* margin-left: 2vw; */
         width: 400%;
     }
     #instagram-items li{

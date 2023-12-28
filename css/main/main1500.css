@@ -2,7 +2,7 @@
     .swiper-navigation{
         display: none;
     }
-    #ranking-chart, #instagram-items ul{
+    #ranking-chart{
         margin-left: 4%;
     }
     #ranking-chart{
@@ -21,7 +21,7 @@
         text-align: center;
     }
     #mdPick-items{
-        width: 95%;
+        width: 90%;
     }
     #mdPick-items ul{
         width: 100%;
