@@ -3,10 +3,6 @@ $(function(){
 
     //첫 화면 초기화
     let parent = $('#chart_tab01_rank').parent().attr('class');
-    $(window).resize(function(){ 
-        // swiper();
-
-    });
 
     function swiper(){
         const visual_swiper = new Swiper('#visual .swiper-container',{
