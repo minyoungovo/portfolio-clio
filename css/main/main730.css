@@ -148,7 +148,6 @@
         border-top: 1px solid #D42D2D;
     }
     #howAbout li{
-        /* margin-right: 8px; */
         width: calc(100%/4 - 8px);
     }
     #event-container{
@@ -184,7 +183,6 @@
         height: 40vh;
     }
     #instagram-items ul{
-        /* margin-left: 2vw; */
         width: 400%;
     }
     #instagram-items li{
