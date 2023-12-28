@@ -11,9 +11,6 @@
     #main-banner{
         width: 100%;
     }
-    #main-banner li{
-        background-position: 30% 0 !important;
-    }
     #ranking-container{
         flex-direction: column;
     }

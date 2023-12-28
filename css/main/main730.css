@@ -82,31 +82,31 @@
         margin-right: 0px;
     }
     /*  */
-    #main-banner{
+    #main-banner ul{
         width: 100%;
-        height: 30vh;
+        height: 45vw;
     }
     #main-banner li{
         float: left;
         width: 25%;
-        height: 30vh;
+        height: 100%;
         cursor: pointer;
     }
     #main-banner .banner-img1{
         background: url(./../../images/main/banner/banner480_1.jpg) no-repeat 0 0 ;
-        background-size: cover;
+        background-size: contain;
     }
     #main-banner .banner-img2{
-        background: url(./../../images/main/banner/banner480_2.jpg) no-repeat 50% 0 ;
-        background-size: cover;
+        background: url(./../../images/main/banner/banner480_2.jpg) no-repeat 0 0 ;
+        background-size: contain;
     }
     #main-banner .banner-img3{
-        background: url(./../../images/main/banner//banner480_3.jpg) no-repeat 50% 0 ;
-        background-size: cover;
+        background: url(./../../images/main/banner//banner480_3.jpg) no-repeat 0 0 ;
+        background-size: contain;
     }
     #main-banner .banner-img4{
-        background: url(./../../images/main/banner//banner480_4.jpg) no-repeat 50% 0 ;
-        background-size: cover;
+        background: url(./../../images/main/banner//banner480_4.jpg) no-repeat 0 0 ;
+        background-size: contain;
     }
     #todayS-item{
         width: 95%;

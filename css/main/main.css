@@ -172,25 +172,25 @@
 }
 #main-banner ul{
     width: 400%;
-    height: 16vh;
+    height: 140px;
 }
 #main-banner li{
     float: left;
     width: 25%;
-    height: 16vh;
+    height: 100%;
     cursor: pointer;
 }
 #main-banner .banner-img1{
-    background: url(./../../images/main/banner/6baa97f53cd161f4c9f0e7d96f058d3e.jpg) no-repeat 0 0 ;
+    background: url(./../../images/main/banner/6baa97f53cd161f4c9f0e7d96f058d3e.jpg) no-repeat 30% 0 ;
 }
 #main-banner .banner-img2{
-    background: url(./../../images/main/banner/92ea5ab4384291e8043f9e6b09ba33f3.jpg) no-repeat 0 0 ;
+    background: url(./../../images/main/banner/92ea5ab4384291e8043f9e6b09ba33f3.jpg) no-repeat center;
 }
 #main-banner .banner-img3{
-    background: url(./../../images/main/banner/9300aac1ad5242150564b3f71dfaabdb.jpg) no-repeat 0 0 ;
+    background: url(./../../images/main/banner/9300aac1ad5242150564b3f71dfaabdb.jpg) no-repeat 30% 0 ;
 }
 #main-banner .banner-img4{
-    background: url(./../../images/main/banner/a629faf15c560dc3b6efb97ce38c71e4.jpg) no-repeat 0 0 ;
+    background: url(./../../images/main/banner/a629faf15c560dc3b6efb97ce38c71e4.jpg) no-repeat center ;
 }
 #todayS{
     width: 100%;
