@@ -4,8 +4,9 @@ $(function(){
  $('.full-close').on('click', () => {$('#full-menu').fadeOut(); });
 
     let header = $('#header'); 
-    let page = $('#family-site'); 
-    let pageOffsetTop = page.offset().top;
+    //let page = $('#family-site');
+    let page = $('#main');
+    let pageOffsetTop = page.offset().top + 10;
     
     $(window).resize(function(){ //반응형 시 다시 계산
       pageOffsetTop = page.offset().top;

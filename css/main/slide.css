@@ -12,12 +12,12 @@
   .swiper-button-prev, .swiper-rtl .swiper-button-next {
     left: var(--swiper-navigation-sides-offset,100px);
     right: auto;
-    --swiper-theme-color: #D42D2D;
+    --swiper-theme-color: #121212;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset,100px);
     left: auto;
-    --swiper-theme-color: #D42D2D;
+    --swiper-theme-color: #121212;
 }
 
 .swp_tab{

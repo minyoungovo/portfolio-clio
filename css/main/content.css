@@ -1,30 +1,33 @@
+main > section:not(#visual){
+    padding: 10vh 0;
+}
 /* 각 섹션별 제목 */
 main > section > header{
     margin:0 auto;
     width: 100%;
-    height: 137px;
+    height: 160px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0);
 }
 /* 메인 제목 */
 main h3.m-title{
     padding-top: 24px;
-    padding-bottom: 4px;
+    /* padding-bottom: 8px; */
     font-size: 2.4em;
     font-family: "NotoSerifKR", sans-serif;
     font-weight: bolder;
-    color: #D42D2D;
+    color: #121212;
 }
 /* 서브 제목 */
 main p.m-subtitle{
     margin: 0 auto ;
     position: relative;
-    padding-top: 8px;
+    /* padding-top: 8px; */
     padding-bottom: 24px;
-    width: 200px;
+    /* width: 200px; */
     font-size: 1.125rem;
-    color: #D42D2D;
-    border-top: 1px solid #D42D2D;
+    color: #121212;
+    /* border-top: 1px solid #9e9e9e; */
     box-sizing: border-box;
 }
 /* 아이템 리스트 - 브랜드, 제목 */
@@ -80,26 +83,26 @@ main figcaption{
 .i_review{
     margin-top: 8px;
     position: absolute;
-    bottom: 0px;right: 0px;
+    bottom: 0px; right: 0px;
     font-size: 0.8em;
 }
 /* 버튼 커스터마이징 */
 .best-btn{
-    padding: 2px 8px;
+    padding: 2px 16px;
     background-color: #D42D2D;
     border: 1px solid #D42D2D;
     border-radius: 30px;
     color: white;
 }
 .new-btn{
-    padding: 2px 8px;
+    padding: 2px 16px;
     background-color: white;
     outline: 1px solid #121212;
     border-radius: 30px;
     color: #121212;
 }
 .dandok-btn, .onePone-btn{
-    padding: 2px 8px;
+    padding: 2px 16px;
     background-color: white;
     outline: 1px solid #D42D2D;
     border-radius: 30px;
@@ -120,20 +123,20 @@ main figcaption{
     width: 120px;
     margin: 0 auto ;
     padding: 8px 20px;
-    background-color: #fff;
+    background-color: #D42D2D;
     border:1px solid #D42D2D;
     border-radius: 100px;
-    font-family: "NotoSerifKR", sans-serif;
-    color: #D42D2D;
+    /* font-family: "NotoSerifKR", sans-serif; */
+    color: #fff;
     cursor: pointer;
     text-align: center;
     box-sizing: border-box;
     transition: 0.3s;
 }
 .view-btn:hover{
-    background-color: #D42D2D;
-    box-shadow: inset 8em 0 0 0 #D42D2D;
-    color: #fff;
+    background-color: #fff;
+    box-shadow: inset 8em 0 0 0 #fff;
+    color: #D42D2D;
 }
 /* 리뷰 */
 .review-star path{

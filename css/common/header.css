@@ -1,6 +1,6 @@
 #header{
     width: 100%;
-    height: 120px;
+    height: 100px;
     position: fixed;
     z-index: 999;
     -webkit-transition-duration:0.5s;
@@ -22,23 +22,28 @@
     padding-top: 16px;
     display: flex;
     float: right;
+    box-sizing: border-box;
 }
 #h_top li{
     margin-right: 16px;
 }
-#h_top a:last-child{
+#h_top li:last-child{
     margin-right: 0px;
+}
+#h_top a{
+    font-size: 0.9em
 }
 #h_bottom{
     width: 100%;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
 }
 #h_bottom .logo{
-    float:left ;
+    position: absolute;
+    top: 32px;
 }
 #h_bottom .logo img{
-    width: 260px;
+    width: 200px;
 }
 #nav{
     float: right;
@@ -47,13 +52,10 @@
 #nav li{
     margin-right: 24px;
     float: left;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 #nav li:last-child{
     margin-right: 0px;
-}
-#nav a{
-    /* font-size: 2em; */
 }
 #nav .hamburger{
     cursor: pointer;
@@ -61,23 +63,23 @@
 }
 .header-scroll {
     border-bottom:1px solid #eee;
-    background-color:rgba(256,256,256,.6);
+    background-color:rgba(256, 256, 256, 1);
     -webkit-transition-duration:0.5s;
     -webkit-transition-timing-function:ease;
     transition-duration:0.5s;
     transition-timing-function:ease;
-  }
-  #full-menu{
+}
+#full-menu{
     display: none;
     position: absolute;
     top: 0; right: 0;
     width: 300px;
     height: 100vh;
-    background-color: rgba(256, 256, 256, .9);
+    /* background-color: rgba(256, 256, 256, .9); */
+    background-color: #fff;
     border-left: 1px solid #eee;
     box-shadow: 0 0 8px 1px #d5d5d5;
     z-index: 999;
-    /* transition: all 0.2s ease-in-out; */
 }
 #full-menu ul{
     margin-top: 112px;
@@ -86,7 +88,6 @@
     line-height: 56px;
     font-size: 1.25em;
     text-align: center;
-    /* transition:all 2s ease-out 1s; */
 }
 #full-menu a:hover{
     font-weight: bold;
@@ -96,11 +97,10 @@
     cursor: pointer;
 }
 #full-menu .full-close p{
-    /* display: block; */
     position: absolute;
     top: 56px; right: 0px;
     padding-right: 18%;
-    font-size: 2em;
+    font-size: 1.25em;
 }
 
 @media screen and (max-width:1800px){
@@ -137,7 +137,7 @@
         text-align: center;
     }
     #h_bottom .logo{
-        margin-top: 4px;
+        top: 4px;
     }
     #h_bottom .logo img{
         width: 140px;
